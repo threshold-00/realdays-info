@@ -172,15 +172,14 @@ ol.points li::before{counter-increment:pt;content:counter(pt,decimal-leading-zer
 }
 
 /* ─── Mockups (26 Oct 2026) ───
-   One made-up business, Hollow Gum Pottery, in every mockup, each tagged "Example".
+   One made-up business, the platform demo Example Woodshop, in every mockup.
    Frames are 1px ink outlines on paper: square, no shadows, no gradients. */
 .mock{position:relative;background:var(--paper);border:var(--bw) solid var(--ink);padding:var(--s-3);overflow:hidden;color:var(--ink);font-size:11px;line-height:1.35}
-.eg{position:absolute;top:var(--s-2);right:var(--s-2);z-index:2;display:inline-flex;align-items:center;height:20px;padding:2px var(--s-2) 0;border-radius:999px;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:10px;letter-spacing:var(--ls-label);text-transform:uppercase;line-height:1}
 .bar{display:block;height:8px;margin:0 0 var(--s-2);background:var(--line)}
 .bar--s{width:60%}
 .bar--title{height:12px;width:80%;background:var(--line-ui);opacity:.6}
 .m-top,.m-from,.m-sub,.m-note{margin:0 0 var(--s-2);font-size:10px;line-height:1.4;color:var(--ink-3)}
-.m-top{color:var(--ink);padding-right:64px}
+.m-top{color:var(--ink)}
 .m-title{display:block;margin:0 0 var(--s-1);font-weight:600;font-size:13px;line-height:1.25;color:var(--ink)}
 .m-photo{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;margin:0 0 var(--s-2);filter:none}
 .m-photo--sq{aspect-ratio:1/1;margin:0}
@@ -192,15 +191,16 @@ ol.points li::before{counter-increment:pt;content:counter(pt,decimal-leading-zer
 .m-field i,.m-row i{font-style:normal;font-family:var(--mono);font-size:9px;letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--ink-3)}
 .m-row{border-width:0 0 var(--bw);border-color:var(--line);padding:var(--s-1) 0}
 .m-days,.m-slots{display:flex;gap:var(--s-1);margin:0 0 var(--s-2)}
-.m-days span,.m-slots span{flex:1;display:flex;flex-direction:column;align-items:center;padding:var(--s-1) 0;border:var(--bw) solid var(--line-ui);font-family:var(--mono);font-size:9px;letter-spacing:.04em;text-transform:uppercase}
+.m-days span,.m-slots span{flex:1;display:flex;flex-direction:column;align-items:center;padding:var(--s-1) 0;border:var(--bw) solid var(--line-ui);font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase}
 .m-days b{font-family:var(--display);font-size:13px;font-weight:600}
 .m-slots span{flex-direction:row;justify-content:center}
 .m-days .on,.m-slots .on{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 
 /* Phone and email frames */
-.phone,.email{height:340px}
-.phone>div,.email>div{padding-top:0}
-.step--lg .email{height:390px}
+.phone,.email,.shot--ph{height:360px}
+.phone>div,.email>div{display:flex;flex-direction:column;height:100%}
+.phone .m-btn,.phone .m-actions,.steps .email .m-actions{margin-top:auto}
+.steps .m-bar{flex:1}
 
 /* Browser frame */
 .browser{padding:0}
@@ -212,21 +212,20 @@ ol.points li::before{counter-increment:pt;content:counter(pt,decimal-leading-zer
 .res .label{margin:0 0 var(--s-1);font-size:9px;color:var(--ink-3)}
 .res--hit{padding:var(--s-2);border:var(--bw) solid var(--ink)}
 .res--gap{padding-top:var(--s-3);border-top:var(--bw) dashed var(--line-ui)}
-.browser .eg{top:6px}
 
 /* Booking: five screens in a row, joined by a thin ink line; step 3 is larger. */
-.steps{position:relative;display:grid;grid-template-columns:1fr 1fr 1.25fr 1fr 1fr;gap:var(--s-4);align-items:end;margin:var(--s-6) 0 0;padding:var(--s-6) 0 0;list-style:none;counter-reset:st}
+.steps{position:relative;display:grid;grid-template-columns:1fr 1fr 1.25fr 1fr 1fr;gap:var(--s-4);align-items:start;margin:var(--s-6) 0 0;padding:var(--s-6) 0 0;list-style:none;counter-reset:st}
 .steps::before{content:"";position:absolute;top:10px;left:0;right:0;height:var(--bw);background:var(--ink)}
 .steps li{position:relative;display:flex;flex-direction:column;gap:var(--s-1);min-width:0;counter-increment:st}
 .steps li::before{content:counter(st);position:absolute;top:calc(-1 * var(--s-6) + 2px);left:0;display:inline-flex;align-items:center;justify-content:center;height:20px;min-width:20px;padding:2px 6px 0;background:var(--paper);border:var(--bw) solid var(--ink);font-family:var(--mono);font-size:var(--t-label);line-height:1;letter-spacing:var(--ls-label)}
 .steps strong{margin-top:var(--s-2);font-size:var(--t-title);font-weight:600;line-height:1.3}
-.steps span{font-size:var(--t-small);line-height:1.45;color:var(--ink-2)}
+.steps li>span{font-size:var(--t-small);line-height:1.45;color:var(--ink-2)}
 .shot{width:100%}
-.shot--ph{display:flex;align-items:center;justify-content:center;height:340px;background:var(--panel);border:var(--bw) dashed var(--line-ui);text-align:center;color:var(--ink-3)}
+.shot--ph{display:flex;align-items:center;justify-content:center;background:var(--panel);border:var(--bw) dashed var(--line-ui);text-align:center;color:var(--ink-3)}
 .shot--ph .label{margin:0}
 .banner{display:flex;gap:var(--s-3);align-items:baseline;margin:var(--s-4) 0 0;padding:var(--s-3) var(--s-4);background:var(--panel);border:var(--bw) solid var(--line);font-size:var(--t-small);line-height:1.45;color:var(--ink)}
 .banner::before{content:"";flex:none;width:8px;height:8px;background:var(--ink)}
-@media (max-width:1023px){
+@media (max-width:1199px){
   .steps{display:flex;gap:var(--s-4);overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:var(--s-3);margin-right:calc(-1 * var(--gutter));padding-right:var(--gutter)}
   .steps::before{display:none}
   .steps li{flex:none;width:min(72vw,260px);scroll-snap-align:start;border-top:var(--bw) solid var(--ink);padding-top:var(--s-6);margin-top:0}
@@ -239,7 +238,7 @@ ol.points li::before{counter-increment:pt;content:counter(pt,decimal-leading-zer
 .cals__row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:var(--s-3);align-items:center}
 .cals__eq{margin:0;font-family:var(--mono);font-size:var(--t-subhead);line-height:1}
 .cals figcaption{margin:var(--s-4) 0 0;color:var(--ink-2)}
-.cal__t{margin:0 0 var(--s-3);padding-right:64px;font-size:10px}
+.cal__t{margin:0 0 var(--s-3);font-size:10px}
 .cal__g{display:grid;grid-template-columns:30px repeat(5,minmax(0,1fr));gap:3px}
 .cal__g b{font-weight:400;font-size:9px;color:var(--ink-3);text-align:center;align-self:center}
 .cal__c{height:30px;border:var(--bw) solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:8px;letter-spacing:.04em;text-transform:uppercase;line-height:1}
@@ -270,21 +269,39 @@ ol.points li::before{counter-increment:pt;content:counter(pt,decimal-leading-zer
 .note-mock__g{display:grid;gap:var(--s-4);padding-top:var(--s-4)}
 @media (min-width:768px){.note-mock__g{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-6)}}
 
-/* What's next: three roadmap thumbnails, kept low detail */
+/* What's next: three roadmap designs (not built yet) */
 .soon{display:grid;gap:var(--s-6);margin:var(--s-6) 0 0;padding:0;list-style:none}
 @media (min-width:768px){.soon{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-6)}}
 .soon li{display:flex;flex-direction:column;gap:var(--s-1);padding-top:var(--s-4);border-top:var(--bw) solid var(--line)}
 .soon strong{margin-top:var(--s-3);font-size:var(--t-title);font-weight:600}
 .soon li>span{color:var(--ink-2);font-size:var(--t-small);line-height:1.5}
 .soon .label{margin:var(--s-2) 0 0}
-.thumb{height:150px;padding-top:var(--s-6)}
-.coming{position:absolute;top:var(--s-2);left:var(--s-2);display:inline-flex;align-items:center;height:20px;padding:2px var(--s-2) 0;border:var(--bw) solid var(--ink);font-size:10px;line-height:1}
-.thumb__tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-2);margin:0 0 var(--s-3)}
-.thumb__tiles span{height:30px;border:var(--bw) solid var(--line-ui)}
-.thumb__sync{display:flex;align-items:center;justify-content:center;gap:var(--s-3);margin:0 0 var(--s-3)}
-.thumb__sync i{font-style:normal;font-family:var(--mono);font-size:var(--t-subhead)}
-.thumb__box{width:56px;height:44px;border:var(--bw) solid var(--line-ui)}
-.thumb__photo{display:block;height:46px;margin:0 0 var(--s-2);background:var(--panel);border:var(--bw) dashed var(--line-ui)}
+.soon .coming{margin:0 0 var(--s-2);color:var(--ink-2)}
+.soon li>.label:not(.coming){margin:var(--s-2) 0 0}
+.thumb{height:320px}
+.thumb>div{display:flex;flex-direction:column;height:100%}
+.thumb .m-days{margin-top:0}
+.d-row{display:flex;align-items:center;justify-content:space-between;gap:var(--s-2);padding:var(--s-2) 0;border-top:var(--bw) solid var(--line);font-size:var(--t-label)}
+.d-row b{display:block;font-weight:600}
+.d-row>span:first-child{line-height:1.3;color:var(--ink-2)}
+.d-act{display:flex;gap:var(--s-1)}
+.d-act .m-btn{height:24px;padding:2px var(--s-2) 0;font-style:normal}
+.d-chip{display:inline-flex;align-items:center;height:20px;padding:2px var(--s-2) 0;border:var(--bw) solid var(--line-ui);font-family:var(--mono);font-size:var(--t-label);letter-spacing:var(--ls-label);text-transform:uppercase;line-height:1;font-style:normal;white-space:nowrap}
+.sync{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1.2fr);gap:var(--s-2);align-items:center;margin:var(--s-3) 0}
+.sync i{font-style:normal;font-family:var(--mono);font-size:var(--t-subhead)}
+.sync__card{padding:var(--s-3);border:var(--bw) solid var(--ink);font-size:var(--t-label);line-height:1.4;color:var(--ink-2)}
+.sync__card b{display:block;font-weight:600;color:var(--ink)}
+.sync__card .d-chip{display:flex;width:max-content;margin-top:var(--s-2)}
+.sync__cal .label{margin:0 0 var(--s-2);font-size:var(--t-label);color:var(--ink-3)}
+.sync__g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+.sync__g b{font-weight:400;text-align:center;color:var(--ink-3)}
+.sync__g span{height:40px;border:var(--bw) solid var(--line);display:flex;align-items:center;justify-content:center;font-size:var(--t-label);line-height:1.1;text-align:center}
+.sync__g .busy{background:var(--line);border-color:transparent}
+.sync__g .on{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
+.rev{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:var(--s-3);margin:var(--s-2) 0 var(--s-3)}
+.rev__img{display:block;width:100%;height:100%;min-height:150px;object-fit:cover}
+.rev__line{display:block;padding:var(--s-3);border:var(--bw) dashed var(--line-ui);font-size:var(--t-label);line-height:1.4;color:var(--ink-3)}
+.rev__chips{display:flex;flex-wrap:wrap;gap:var(--s-2)}
 
 /* Print: mockup slides are taller than one page, so scale them to fit. */
 @media print{
@@ -293,9 +310,40 @@ ol.points li::before{counter-increment:pt;content:counter(pt,decimal-leading-zer
   .steps::before{display:block}
   .steps li{width:auto;border-top:0;padding-top:0}
   .phone,.email,.shot--ph{height:62mm}
-  .step--lg .email{height:70mm}
   .mk{grid-template-columns:repeat(3,minmax(0,1fr));gap:3mm;margin-top:3mm}
   .mk .mock{height:30mm}
   .soon{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .thumb{height:34mm}
+  .thumb{height:52mm}
+}
+
+/* ─── Fits your tools (#tools), polished 26 Oct 2026 ───
+   Heading, lede and spacing follow the other text slides; the points sit left and the
+   calendars right, both starting on the same line. Nothing on this slide is under 12px. */
+.tools-row{display:grid;gap:var(--s-7);align-items:start;margin-top:var(--s-7)}
+/* 3/9 under 1440 keeps each calendar card wide enough; 4/8 from 1440. */
+@media (min-width:1024px){.tools-row{grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:var(--s-6)}}
+@media (min-width:1440px){.tools-row{grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--s-8)}}
+@media (max-width:1023px){.tools-row .cals{order:-1}}
+#tools .points{margin-top:0}
+#tools .points li{padding:var(--s-5) 0;font-size:var(--t-small)}
+#tools .points li strong{font-size:var(--t-title)}
+#tools .tbc{margin-left:var(--s-2)}
+#tools .draft,#tools .tbc{font-size:var(--t-label)}
+#tools .mock{padding:var(--s-4);font-size:var(--t-label)}
+#tools .cal__t{margin:0 0 var(--s-4);font-size:var(--t-label)}
+#tools .cal__g{grid-template-columns:48px repeat(5,minmax(0,1fr));gap:4px}
+#tools .cal__g b{font-family:var(--mono);font-size:var(--t-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--ink-3)}
+#tools .cal__c{height:44px}
+#tools .cals__row{grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);gap:var(--s-4)}
+#tools .cals__eq{text-align:center}
+#tools .cals figcaption{margin:var(--s-4) 0 0;text-align:left}
+@media (max-width:767px){
+  #tools .cals__row{grid-template-columns:minmax(0,1fr)}
+  #tools .cal__c{height:36px}
+}
+@media print{
+  #tools .tools-row{margin-top:5mm;gap:8mm}
+  #tools .points li{padding:3mm 0}
+  #tools .cal__c{height:26px}
+  #tools .mock{padding:3mm}
 }
