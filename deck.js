@@ -28,7 +28,7 @@
   // browser has jumped to it.
   function render(updateUrl) {
     current = nearest();
-    // The cover is slide 0, so the count runs 1 / 10 to 10 / 10 after it.
+    // The cover is slide 0, so the count runs from 1 after it to the last slide.
     counter.textContent = current === 0 ? '' : current + ' / ' + last;
     progress.style.width = (current / last) * 100 + '%';
     var id = slides[current].id;
