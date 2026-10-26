@@ -6,12 +6,12 @@
   var last = slides.length - 1, current = 0;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-  // ?for=Indigo%20Woodworks: "for Indigo Woodworks" on the cover, and in the email subject.
+  // ?for=Indigo%20Woodworks: "Prepared for Indigo Woodworks" on the cover, and in the email subject.
   var name = (new URLSearchParams(location.search).get('for') || '').trim().slice(0, 80);
   if (name) {
-    [].forEach.call(document.querySelectorAll('[data-for]'), function (el) { el.textContent = 'for ' + name; });
+    [].forEach.call(document.querySelectorAll('[data-for]'), function (el) { el.textContent = 'Prepared for ' + name; el.hidden = false; });
     var talk = document.getElementById('talkBtn');
-    if (talk) talk.href = 'mailto:rowena@getrealdays.com?subject=' + encodeURIComponent('Founding partner: ' + name);
+    if (talk) talk.href = 'mailto:rowena@getrealdays.com?subject=' + encodeURIComponent('RealDays: ' + name);
     document.title = 'RealDays partner pitch for ' + name;
   }
 
@@ -28,7 +28,7 @@
   // browser has jumped to it.
   function render(updateUrl) {
     current = nearest();
-    // The cover is slide 0, so the count runs 1 / 11 to 11 / 11 after it.
+    // The cover is slide 0, so the count runs 1 / 10 to 10 / 10 after it.
     counter.textContent = current === 0 ? '' : current + ' / ' + last;
     progress.style.width = (current / last) * 100 + '%';
     var id = slides[current].id;

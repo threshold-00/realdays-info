@@ -24,7 +24,8 @@
 <section class="slide slide--cover" id="cover" aria-label="Cover">
   <div class="slide__in">
     <h1 class="wordmark">RealDays.</h1>
-    <p class="cover-line">A partner pitch <span data-for>for your business</span></p>
+    <p class="cover-line">Something you'll actually remember.</p>
+    <p class="cover-for label" data-for hidden></p>
   </div>
   <p class="cover-foot label">getrealdays.com · Ro Baulch · October 2026</p>
 </section>
@@ -32,15 +33,23 @@
 <!-- 1. The customers you're not getting -->
 <section class="slide" id="customers" aria-labelledby="customers-h">
   <div class="slide__in">
-    <p class="eyebrow">The customers you're not getting</p>
+    <p class="eyebrow">The problem</p>
     <div class="split">
       <div>
-        <h2 id="customers-h">People are looking for you. They can't find you.</h2>
-        <p class="lede">Every weekend, Melburnians search for something to do on the Peninsula. What they find is a page of big-name tours, a review site, or nothing. The small businesses doing the most interesting things, the glassblower, the horse trail, the dawn kayak, are a phone call or a buried Instagram away. Most people don't make the call. They book what's easy.</p>
+        <h2 id="customers-h">The customers you're not getting.</h2>
+        <p class="lede">Every weekend, Melburnians search for something to do in Victoria. What they find is a page of big-name tours, a review site, or nothing. The small businesses doing the most interesting things, the glassblower, the horse trail, the dawn kayak, are a phone call or a buried Instagram away. Most people don't make the call. They book what's easy.</p>
         <p class="pull">RealDays is where they book what's real.</p>
       </div>
-      <!-- Image slot: Ro's screenshot of the Google search "things to do Mornington Peninsula this weekend". -->
-      <div class="slot" aria-hidden="true"></div>
+      <div class="mock browser" role="img" aria-label="Example search results page for things to do in Victoria this weekend, showing generic big tours and review pages.">
+        <span class="eg">Example</span>
+        <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">things to do in Victoria this weekend</span></div>
+        <div class="browser__body" aria-hidden="true">
+          <div class="res"><p class="label">Big tour company</p><span class="bar bar--title"></span><span class="bar"></span><span class="bar bar--s"></span></div>
+          <div class="res"><p class="label">Review site, top 10 list</p><span class="bar bar--title"></span><span class="bar"></span><span class="bar bar--s"></span></div>
+          <div class="res"><p class="label">Another big tour company</p><span class="bar bar--title"></span><span class="bar"></span><span class="bar bar--s"></span></div>
+          <div class="res res--gap"><p class="label">Page 2: the small business, if you scroll that far</p><span class="bar bar--title"></span><span class="bar bar--s"></span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -52,7 +61,7 @@
     <div class="split">
       <div>
         <h2 id="what-h">A booking site for small, owner-run experiences.</h2>
-        <p class="lede">RealDays lists experiences run by the people who started them, on the Mornington Peninsula and in Bali. A customer finds you, sends a booking request, and pays once you've said yes. You get their name, phone and email. They get a confirmation and your waiver. No subscription, no lock-in, no exclusivity. Keep taking bookings every other way you do now.</p>
+        <p class="lede">RealDays lists experiences run by the people who started them, in Victoria and Bali. A customer finds you, sends a booking request, and pays once you've said yes. You get their name, phone and email. They get a confirmation and your waiver. No subscription, no lock-in, no exclusivity. Keep taking bookings every other way you do now.</p>
         <p class="proof label">Salty Cowboy, Bali. The first business on RealDays. <q><span class="tbc-text">One line from Salty Cowboy in their own words</span><span class="tbc">To confirm</span></q></p>
       </div>
       <a class="card" href="https://getrealdays.com/bali/salty-cowboy/beach-ride/" target="_blank" rel="noopener">
@@ -71,7 +80,7 @@
   <div class="slide__in">
     <p class="eyebrow">What it costs</p>
     <h2 id="cost-h">Free until May 2027. Then 12% on the bookings we bring you.</h2>
-    <p class="lede">Nothing to join. Nothing a month. Until 1 May 2027, you pay only the card fee on each booking, about 1.7% plus 30 cents for Australian cards, the same as taking a card at the counter. From 1 May 2027, it's 12% of each booking made through RealDays, with GST and the card fee included. If a booking is refunded in full, so is our fee. Bookings you take yourself cost nothing.</p>
+    <p class="lede">Nothing to join. Nothing a month. Until 1 May 2027, you pay only the card fee on each booking, about 1.7% plus 30 cents for Australian cards, the same as taking a card at the counter. From 1 May 2027, it's 12% of each booking made through RealDays, with GST and the card fee included. If a booking is refunded in full, so is our fee.</p>
     <div class="table-wrap">
       <table class="compare">
         <caption class="sr-only">RealDays compared with Airbnb Experiences, GetYourGuide and Viator</caption>
@@ -80,14 +89,13 @@
         </thead>
         <tbody>
           <tr><th scope="row">Commission</th><td>12% incl. card fees</td><td>20%*</td><td>25%*</td><td>25%*</td></tr>
-          <tr><th scope="row">You get the customer's email <span class="tbc">To confirm</span></th><td>Yes</td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td></tr>
-          <tr><th scope="row">Paid <span class="tbc">To confirm</span></th><td>Day after the experience</td><td><span class="tbc-text">After the experience</span></td><td><span class="tbc-text">Twice monthly</span></td><td><span class="tbc-text">30 days after</span></td></tr>
-          <tr><th scope="row">Exclusivity <span class="tbc">To confirm</span></th><td>None</td><td><span class="tbc-text">None</span></td><td><span class="tbc-text">None</span></td><td><span class="tbc-text">None</span></td></tr>
+          <tr><th scope="row">You get the customer's email</th><td>Yes</td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td></tr>
+          <tr><th scope="row">Paid</th><td>Day after the experience</td><td><span class="tbc-text">After the experience</span></td><td><span class="tbc-text">Twice monthly</span></td><td><span class="tbc-text">30 days after</span></td></tr>
+          <tr><th scope="row">Exclusivity</th><td>None</td><td><span class="tbc-text">None</span></td><td><span class="tbc-text">None</span></td><td><span class="tbc-text">None</span></td></tr>
         </tbody>
       </table>
     </div>
     <p class="compare-note">*Excludes card fees. **Airbnb says it typically charges 20%. GetYourGuide and Viator don't publish a rate; 25% is an estimate from their supplier terms and investor reports. Sources checked 21 Oct 2026. Rates vary by business and can change.</p>
-    <p class="note label">Five founding partners pay nothing but the card fee, for life. <a href="#founding">Last slide.</a></p>
   </div>
 </section>
 
@@ -97,14 +105,78 @@
     <p class="eyebrow">How a booking works</p>
     <h2 id="booking-h">Nothing is booked until you say yes.</h2>
     <p class="lede">Every booking on RealDays starts as a request. You see it, check your own calendar, and accept or decline. The customer's card is only charged once you've accepted. No double bookings, no surprises on a day you'd already filled, and no penalty for saying no.</p>
-    <ol class="points points--5">
-      <li><strong>They find you.</strong>A customer searches, lands on your page and picks a date, a time and how many are coming.</li>
-      <li><strong>They send a request.</strong>They enter their details and card. Nothing is charged yet.</li>
-      <li><strong>You say yes or no.</strong>The request reaches you by email. Answer within 24 hours.</li>
-      <li><strong>It's confirmed.</strong>The customer is charged and gets a confirmation with your waiver and how to reach you. You get their name, phone and email.</li>
-      <li><strong>They show up.</strong>You run the experience the way you always do. Your money is paid the day after.</li>
+    <ol class="steps">
+      <li>
+        <div class="shot mock phone" role="img" aria-label="Example phone screen: the Hollow Gum Pottery page with a date picker.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <p class="m-top label">RealDays</p>
+            <img class="m-photo" src="assets/pottery-wheel.jpg" alt="" width="900" height="675" loading="lazy" decoding="async" />
+            <p class="m-title">Wheel-throwing workshop</p>
+            <p class="m-sub label">Hollow Gum Pottery · A$95 per person</p>
+            <div class="m-days"><span>Fri<b>7</b></span><span class="on">Sat<b>8</b></span><span>Sun<b>9</b></span><span>Mon<b>10</b></span></div>
+            <div class="m-slots"><span>9am</span><span class="on">10am</span><span>1pm</span></div>
+            <span class="m-btn">Request to book</span>
+          </div>
+        </div>
+        <strong>They find you.</strong><span>A date, a time, how many are coming.</span>
+      </li>
+      <li>
+        <div class="shot mock phone" role="img" aria-label="Example phone screen: a filled-in booking request form with name, phone, email and card. Nothing is charged yet.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <p class="m-top label">Your request</p>
+            <p class="m-sub label">Hollow Gum Pottery · Sat 10am</p>
+            <span class="m-field"><i>Name</i>Sam Example</span>
+            <span class="m-field"><i>Phone</i>0400 000 000</span>
+            <span class="m-field"><i>Email</i>sam@example.com</span>
+            <span class="m-field"><i>Card</i>•••• •••• •••• 4242</span>
+            <p class="m-note label">Nothing is charged yet</p>
+            <span class="m-btn">Send request</span>
+          </div>
+        </div>
+        <strong>They send a request.</strong><span>Card details in. Charged only after you say yes.</span>
+      </li>
+      <li class="step--lg">
+        <div class="shot mock email" role="img" aria-label="Example email to the business: a booking request for Saturday 10am with Accept and Decline buttons.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <p class="m-top label">New booking request</p>
+            <p class="m-from label">From RealDays · To Hollow Gum Pottery</p>
+            <p class="m-title">Sam would like to book Saturday 10am</p>
+            <p class="m-sub label">Wheel-throwing workshop · 2 people · A$190</p>
+            <span class="bar"></span><span class="bar bar--s"></span>
+            <p class="m-note label">Answer within 24 hours</p>
+            <div class="m-actions"><span class="m-btn">Accept</span><span class="m-btn m-btn--2">Decline</span></div>
+          </div>
+        </div>
+        <strong>You say yes or no.</strong><span>It reaches you by email. Answer within 24 hours.</span>
+      </li>
+      <li>
+        <div class="shot mock phone" role="img" aria-label="Example phone screen: the customer's confirmation, with the waiver and how to reach the business.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <p class="m-top label">Confirmed</p>
+            <p class="m-title">You're booked in.</p>
+            <p class="m-sub label">Hollow Gum Pottery · Sat 10am</p>
+            <span class="m-row"><i>Waiver</i>Attached</span>
+            <span class="m-row"><i>Meet at</i>The studio</span>
+            <span class="m-row"><i>Questions</i>Message the business</span>
+            <span class="bar"></span><span class="bar bar--s"></span>
+            <span class="m-btn m-btn--2">Add to calendar</span>
+          </div>
+        </div>
+        <strong>It's confirmed.</strong><span>Waiver and contact details sent to the customer.</span>
+      </li>
+      <li>
+        <div class="shot shot--ph" role="img" aria-label="Photo placeholder: they show up.">
+          <p class="label">Photo placeholder<br />They show up</p>
+        </div>
+        <strong>They show up.</strong><span>You run it your way. Your money is sent the day after the experience.</span>
+      </li>
     </ol>
     <p class="note label">Need to move a date? Sort it with the customer directly and let us know. The money doesn't move.</p>
+    <p class="banner">We're working on an end-to-end booking solution, so you'll be able to adjust it in your calendar.</p>
   </div>
 </section>
 
@@ -112,8 +184,8 @@
 <section class="slide" id="money" aria-labelledby="money-h">
   <div class="slide__in">
     <p class="eyebrow">Your money</p>
-    <h2 id="money-h">Paid to your bank the day after the experience.</h2>
-    <p class="lede">Payments run on Stripe, the same system behind Airbnb, Uber and Shopify. You open a Stripe account through RealDays in about ten minutes with your ABN and bank details. From then on, every accepted booking is held safely and paid to your account the day after the experience runs.</p>
+    <h2 id="money-h">Paid out the day after the experience.</h2>
+    <p class="lede">Payments run on Stripe, the same system behind Airbnb, Uber and Shopify. You open a Stripe account through RealDays in about ten minutes with your ABN and bank details. From then on, every accepted booking is held safely and sent to you the day after the experience runs. Stripe then pays it into your bank on its normal payout timing.</p>
     <ul class="points points--2">
       <li><strong>What you pay.</strong>Only the card fee, about 1.7% plus 30 cents a booking for Australian cards, until 1 May 2027. Nothing else.</li>
       <li><strong>Cancellations.</strong><span class="tbc-text">Customers can cancel free up to 48 hours before. Inside 48 hours, they can reschedule or forfeit. If you or the weather cancel, the customer gets a full refund.</span><span class="tbc">To confirm</span> You can set a longer window for multi-day experiences.</li>
@@ -128,12 +200,11 @@
   <div class="slide__in">
     <p class="eyebrow">What we ask of you</p>
     <h2 id="ask-h">Ten minutes a week. That's it.</h2>
-    <p class="lede">RealDays only works if customers can trust a yes. In return for the bookings, we ask five things:</p>
-    <ol class="points points--5">
+    <p class="lede">RealDays only works if customers can trust a yes. In return for the bookings, we ask four things:</p>
+    <ol class="points points--4">
       <li><strong>Answer every request within 24 hours.</strong>A quick no is better than a slow yes.</li>
-      <li><strong>Tell us your quiet slots.</strong>The days you'd most like filled are the ones we'll push hardest.</li>
       <li><strong>Tell us the moment anything changes.</strong>A cancelled day, a moved date, a new price. One message is enough.</li>
-      <li><strong>Send us your waiver and insurance once.</strong>We attach the waiver to every confirmation. We never ask again unless something changes.</li>
+      <li><strong>Send us any waivers.</strong>We'll include them in the customer's confirmation email.</li>
       <li><strong>Treat RealDays customers as your own.</strong>They are. You have their details, and they'll come back to you directly.</li>
     </ol>
     <p class="pull">Everything else, the listing, the photos, the marketing, the money, is ours to do.</p>
@@ -144,13 +215,24 @@
 <section class="slide" id="tools" aria-labelledby="tools-h">
   <div class="slide__in">
     <p class="eyebrow">Fits your tools <span class="draft">Draft</span></p>
-    <h2 id="tools-h">Keep what works. Add RealDays alongside it.</h2>
-    <p class="lede">You don't change your booking system, your calendar or your website. RealDays requests arrive by email, you check them against whatever you use today, and you answer. We build your listing from your existing site and socials, and you approve it before it goes live.</p>
-    <ul class="points points--3">
-      <li><strong>Today.</strong>Requests by email. Your calendar stays yours.</li>
-      <li><strong>Next.</strong><span class="tbc-text">Google Calendar: an accepted booking lands in your calendar automatically. Month to confirm.</span><span class="tbc">To confirm</span></li>
-      <li><strong>Later.</strong><span class="tbc-text">Links to the booking tools businesses already use. Which ones depends on what you tell us.</span><span class="tbc">To confirm</span></li>
-    </ul>
+    <div class="split">
+      <div>
+        <h2 id="tools-h">Keep what works. Add RealDays alongside it.</h2>
+        <p class="lede">You don't change your booking system, your calendar or your website. RealDays requests arrive by email, you check them against whatever you use today, and you answer. We build your listing from your existing site and socials, and you approve it before it goes live.</p>
+        <ul class="points points--1">
+          <li><strong>Today.</strong>Requests by email. Your calendar stays yours.</li>
+          <li><strong>Next.</strong><span class="tbc-text">Google Calendar: an accepted booking lands in your calendar automatically. Month to confirm.</span><span class="tbc">To confirm</span></li>
+        </ul>
+      </div>
+      <figure class="cals" role="img" aria-label="Example: two calendars for the same week, Your calendar and RealDays, with the same Saturday 10am slot highlighted in both.">
+        <div class="cals__row" aria-hidden="true">
+          <div class="mock"><span class="eg">Example</span><div class="cal"><p class="label cal__t">Your calendar</p><div class="cal__g"><span></span><b class="label">Wed</b><b class="label">Thu</b><b class="label">Fri</b><b class="label">Sat</b><b class="label">Sun</b><b class="label">9am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><b class="label">10am</b><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c on">Example</span><span class="cal__c"></span><b class="label">11am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><b class="label">1pm</b><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span></div></div></div>
+          <p class="cals__eq">=</p>
+          <div class="mock"><span class="eg">Example</span><div class="cal"><p class="label cal__t">RealDays</p><div class="cal__g"><span></span><b class="label">Wed</b><b class="label">Thu</b><b class="label">Fri</b><b class="label">Sat</b><b class="label">Sun</b><b class="label">9am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><b class="label">10am</b><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c on">Example</span><span class="cal__c"></span><b class="label">11am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><b class="label">1pm</b><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span></div></div></div>
+        </div>
+        <figcaption class="label">Same slot, same time. Nothing double-booked.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -160,14 +242,89 @@
     <p class="eyebrow">How we bring customers <span class="draft">Draft</span></p>
     <h2 id="marketing-h">What we actually do to fill your quiet days.</h2>
     <p class="lede">No vague marketing. A short list of work, done every week, that you can check.</p>
-    <ol class="points points--3">
-      <li><strong>Search and AI search.</strong>RealDays is built to show up when people ask Google, ChatGPT or Perplexity what to do on the Peninsula, and to send them to your page.</li>
-      <li><strong>Your own page.</strong>A page about your business on RealDays, written with you, with your photos and your story.</li>
-      <li><strong>Weekly posts.</strong>We post about you on Instagram and Facebook every week and tag you. Collab posts land on both our feeds. You share when you can.</li>
-      <li><strong>Back for more.</strong>Emails to past RealDays customers when you have a quiet slot or something new.</li>
-      <li><strong>Local reach.</strong>Peninsula and Melbourne groups, and one local partner that puts RealDays in front of its guests.</li>
-      <li><strong>A monthly note.</strong>What we did, what it brought, what we'll change.</li>
-    </ol>
+    <ul class="mk">
+      <li>
+        <p class="label">Search</p>
+        <div class="mock browser" role="img" aria-label="Example search results page with Hollow Gum Pottery's listing first and grey bars for the others.">
+          <span class="eg">Example</span>
+          <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">pottery class victoria</span></div>
+          <div class="browser__body" aria-hidden="true">
+            <div class="res res--hit"><p class="label">getrealdays.com</p><span class="m-title">Wheel-throwing workshop, Hollow Gum Pottery</span><span class="bar"></span></div>
+            <div class="res"><span class="bar bar--title"></span><span class="bar bar--s"></span></div>
+            <div class="res"><span class="bar bar--title"></span><span class="bar bar--s"></span></div>
+          </div>
+        </div>
+        <p>RealDays is built to show up when people search for what to do in Victoria, and to send them to your page.</p>
+      </li>
+      <li>
+        <p class="label">Ask</p>
+        <div class="mock chat" role="img" aria-label="Example chat: a question about pottery in Victoria and an answer naming Hollow Gum Pottery.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <p class="chat__q">Where can I try pottery in Victoria?</p>
+            <p class="chat__a">Hollow Gum Pottery runs wheel-throwing workshops for A$95 per person. You can send a booking request on RealDays.</p>
+          </div>
+        </div>
+        <p>And when they ask ChatGPT or Perplexity the same question.</p>
+      </li>
+      <li>
+        <p class="label">Your page</p>
+        <div class="mock page" role="img" aria-label="Example snippet of the Hollow Gum Pottery page on RealDays.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <img class="m-photo" src="assets/pottery-wheel.jpg" alt="" width="900" height="675" loading="lazy" decoding="async" />
+            <p class="m-title">Wheel-throwing workshop</p>
+            <p class="m-sub label">Hollow Gum Pottery · Victoria · A$95 per person</p>
+            <span class="bar"></span><span class="bar bar--s"></span>
+          </div>
+        </div>
+        <p>A page about your business on RealDays, written with you, with your photos and your story.</p>
+      </li>
+      <li>
+        <p class="label">Social</p>
+        <div class="mock post" role="img" aria-label="Example square social post with a photo and a short caption.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <img class="m-photo m-photo--sq" src="assets/pottery-wheel.jpg" alt="" width="900" height="675" loading="lazy" decoding="async" />
+            <p class="m-cap"><b>Hollow Gum Pottery</b> Hands in the clay, Saturday morning. Book a wheel-throwing workshop on RealDays.</p>
+          </div>
+        </div>
+        <p>A post about you on Instagram and Facebook every week, tagged. Collab posts land on both our feeds.</p>
+      </li>
+      <li>
+        <p class="label">Email</p>
+        <div class="mock email" role="img" aria-label="Example email from RealDays to a past customer: Want more? This one's close to you, with one photo and one button.">
+          <span class="eg">Example</span>
+          <div aria-hidden="true">
+            <p class="m-from label">From RealDays</p>
+            <p class="m-title">Want more? This one's close to you.</p>
+            <img class="m-photo m-photo--wide" src="assets/pottery-wheel.jpg" alt="" width="900" height="675" loading="lazy" decoding="async" />
+            <span class="m-btn">See the experience</span>
+          </div>
+        </div>
+        <p>Emails to past RealDays customers when you have a quiet slot or something new.</p>
+      </li>
+      <li>
+        <p class="label">Local reach</p>
+        <div class="mock map" role="img" aria-label="Example outline map of Victoria with a few dots.">
+          <span class="eg">Example</span>
+          <svg viewBox="0 0 184 142" aria-hidden="true" focusable="false"><path d="M0 4.0 L20 7.9 L40 27.4 L60 50.8 L80 54.7 L100 57.3 L120 56.0 L138 58.6 L146 76.8 L160 92.4 L179.4 95.0 L166 102.8 L140 104.1 L120 115.8 L108 136.6 L104 126.2 L90 118.4 L78 117.1 L73 115.8 L71 106.7 L78 104.1 L70 110.6 L70 115.8 L66 118.4 L50 130.1 L40 123.6 L30 118.4 L12 117.1 L0 109.3Z" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/><g fill="currentColor"><circle cx="79" cy="103" r="3"/><circle cx="67" cy="112" r="3"/><circle cx="57" cy="96" r="3"/><circle cx="66" cy="76" r="3"/><circle cx="30" cy="87" r="3"/><circle cx="120" cy="103" r="3"/></g></svg>
+        </div>
+        <p>Victorian and Melbourne groups, and one local partner that puts RealDays in front of its guests.</p>
+      </li>
+    </ul>
+    <div class="mk-note">
+      <p class="label">A monthly note</p>
+      <div class="mock note-mock" role="img" aria-label="Example monthly note with three headings: what we did, what it brought, what we'll change. No real numbers.">
+        <span class="eg">Example</span>
+        <div class="note-mock__g" aria-hidden="true">
+          <div><p class="m-title">What we did</p><span class="bar"></span><span class="bar bar--s"></span></div>
+          <div><p class="m-title">What it brought</p><span class="bar"></span><span class="bar bar--s"></span></div>
+          <div><p class="m-title">What we'll change</p><span class="bar"></span><span class="bar bar--s"></span></div>
+        </div>
+      </div>
+      <p>What we did, what it brought, what we'll change.</p>
+    </div>
   </div>
 </section>
 
@@ -176,39 +333,44 @@
   <div class="slide__in">
     <p class="eyebrow">What's next <span class="draft">Draft</span></p>
     <h2 id="next-h">What we're building, and when.</h2>
-    <ul class="rows">
-      <li><strong>Business dashboard.</strong><span>Update your details, prices and quiet slots, see your bookings and who's coming.</span><p class="label" style="margin:0"><span class="tbc-text">Month</span><span class="tbc">To confirm</span></p></li>
-      <li><strong>Google Calendar.</strong><span>Accepted bookings land in your calendar on their own.</span><p class="label" style="margin:0"><span class="tbc-text">Month</span><span class="tbc">To confirm</span></p></li>
-      <li><strong>Real reviews.</strong><span>After every booking, one photo and one line from the customer, shown on your page and shared on our socials.</span><p class="label" style="margin:0"><span class="tbc-text">Month</span><span class="tbc">To confirm</span></p></li>
+    <ul class="soon">
+      <li>
+        <div class="mock thumb" role="img" aria-label="Low-detail sketch of a business dashboard.">
+          <span class="eg">Example</span><span class="coming label">Coming</span>
+          <div aria-hidden="true"><div class="thumb__tiles"><span></span><span></span><span></span></div><span class="bar"></span><span class="bar"></span><span class="bar bar--s"></span></div>
+        </div>
+        <strong>Business dashboard.</strong><span>Update your details, prices and quiet slots, see your bookings and who's coming.</span>
+        <p class="label"><span class="tbc-text">Month</span><span class="tbc">To confirm</span></p>
+      </li>
+      <li>
+        <div class="mock thumb" role="img" aria-label="Low-detail sketch of a calendar sync.">
+          <span class="eg">Example</span><span class="coming label">Coming</span>
+          <div aria-hidden="true"><div class="thumb__sync"><span class="thumb__box"></span><i>⇄</i><span class="thumb__box"></span></div><span class="bar bar--s"></span></div>
+        </div>
+        <strong>Google Calendar.</strong><span>Accepted bookings land in your calendar on their own.</span>
+        <p class="label"><span class="tbc-text">Month</span><span class="tbc">To confirm</span></p>
+      </li>
+      <li>
+        <div class="mock thumb" role="img" aria-label="Low-detail sketch of a review: a photo and a blank block of text. No stars or quotes.">
+          <span class="eg">Example</span><span class="coming label">Coming</span>
+          <div aria-hidden="true"><span class="thumb__photo"></span><span class="bar"></span><span class="bar"></span><span class="bar bar--s"></span></div>
+        </div>
+        <strong>Real reviews.</strong><span>After every booking, one photo and one line from the customer, shown on your page and shared on our socials.</span>
+        <p class="label"><span class="tbc-text">Month</span><span class="tbc">To confirm</span></p>
+      </li>
     </ul>
-    <p class="note label">Founding partners tell us what to build first.</p>
   </div>
 </section>
 
-<!-- 10. The founding five (draft) -->
-<section class="slide" id="founding" aria-labelledby="founding-h">
-  <div class="slide__in">
-    <p class="eyebrow">The founding five <span class="draft">Draft</span></p>
-    <h2 id="founding-h">Five founding partners. Zero commission, for life.</h2>
-    <p class="lede">We're taking five businesses in from the start. In return for helping us get this right, founding partners get:</p>
-    <ul class="points points--2">
-      <li><strong>Zero commission, forever.</strong>You pay the card fee and nothing else, ever. Not just until May 2027.</li>
-      <li><strong>Named on the site</strong>as a founding partner, with a featured page about your business.</li>
-      <li><strong>A weekly post</strong>about you on our socials. You share when you can.</li>
-      <li><strong>A 30-minute call a month</strong>to tell us what's working and what to build.</li>
-    </ul>
-    <p class="pull">Say yes, we build your listing, you approve it, you're live. <span class="tbc-text">Deadline for the five.</span><span class="tbc">To confirm</span></p>
-    <div class="actions">
-      <a class="btn" id="talkBtn" href="mailto:rowena@getrealdays.com?subject=Founding%20partner">Yes, let's talk</a>
-      <a class="btn--secondary" aria-disabled="true">Call Ro <span class="tbc">To confirm</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- 11. End card -->
+<!-- 10. End card. CONTACT TO CONFIRM: Ro to say whether a "Call Ro" number goes here; none invented. -->
 <section class="slide slide--end" id="end" aria-label="End">
   <div class="slide__in">
     <p class="wordmark">RealDays.</p>
+    <p class="pull end-line">Want to talk? Say yes, and we'll build your listing for you to approve.</p>
+    <div class="actions">
+      <a class="btn" id="talkBtn" href="mailto:rowena@getrealdays.com">Yes, let's talk</a>
+      <a class="btn--secondary" aria-disabled="true">Call Ro <span class="tbc">To confirm</span></a>
+    </div>
     <p class="label"><a href="https://getrealdays.com/">getrealdays.com</a></p>
   </div>
 </section>
