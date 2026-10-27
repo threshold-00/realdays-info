@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow" />
-<title>RealDays partner pitch</title>
-<meta name="description" content="RealDays, a booking site for small, owner-run experiences: a partner pitch for businesses." />
+<title>RealDays info deck</title>
+<meta name="description" content="RealDays, a booking site for small, owner-run experiences: an info deck for businesses." />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,75 +20,311 @@
 
 <main>
 
-<!-- Mockups use the platform's demo business, Example Woodshop (getrealdays.com/demo/b/example-woodshop/). Photo: Barney Goodman on Unsplash. -->
-<!-- 0. Cover -->
+<!-- Rebuilt from Ro's edited Figma deck (file 7kn8wKactyhuwQCL6ywTHa, node 6:4306), 27 Oct 2026.
+     Mockups use the platform's demo business, Example Woodshop (getrealdays.com/demo/b/example-woodshop/). Photo: Barney Goodman on Unsplash.
+     Customer problem photo: Matheus Ferrero on Unsplash. Journey meme: the thumbs-up still Ro supplied (assets/journey-thumbs-up.jpg); journey-happy.jpg (Vince Fleming on Unsplash) is no longer used.
+     Competitor screenshots: Melbourne search results on each site, 27 Oct 2026.
+     Grey .ph blocks are placeholders for images Ro will supply. -->
+
+<!-- 0. Cover (Figma 6:4262, contact lines 6:4286) -->
 <section class="slide slide--cover" id="cover" aria-label="Cover">
   <div class="slide__in">
     <h1 class="wordmark">RealDays.</h1>
-    <p class="cover-line">Something you'll actually remember.</p>
+    <p class="cover-line">Something you'll actually remember doing.</p>
     <p class="cover-for label" data-for hidden></p>
   </div>
-  <p class="cover-foot label">getrealdays.com · Ro Baulch · October 2026</p>
+  <div class="cover-foot">
+    <p class="label">getrealdays.com · Ro Baulch · October 2026</p>
+    <p class="cover-contact"><a href="https://wa.me/61466567953">WhatsApp: +61 466 567 953</a><br /><a href="mailto:rowena@getrealdays.com">rowena@getrealdays.com</a></p>
+  </div>
 </section>
 
-<!-- 1. The customers you're not getting -->
-<section class="slide" id="customers" aria-labelledby="customers-h">
+<!-- 1. Contents (Figma 4:3891) -->
+<section class="slide" id="contents" aria-labelledby="contents-h">
   <div class="slide__in">
-    <p class="eyebrow">The problem</p>
-    <div class="split">
-      <div>
-        <h2 id="customers-h">The customers you're not getting.</h2>
-        <p class="lede">Every weekend, Melburnians search for something to do in Victoria. What they find is a page of big-name tours, a review site, or nothing. The small businesses doing the most interesting things, the glassblower, the horse trail, the dawn kayak, are a phone call or a buried Instagram away. Most people don't make the call. They book what's easy.</p>
-        <p class="pull">RealDays is where they book what's real.</p>
+    <nav class="toc" aria-labelledby="contents-h">
+      <p class="label toc__label" id="contents-h">CONTENTS</p>
+      <ol class="toc__list">
+        <li><a href="#problem-customer">The customer &amp; business problem</a></li>
+        <li><a href="#approach">Our approach</a></li>
+        <li><a href="#journey">High level customer journey</a></li>
+        <li><a href="#marketing">Marketing</a></li>
+        <li><a href="#roadmap">RealDays roadmap</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#payments">How we handle payments</a></li>
+        <li><a href="#feedback">Talk to us</a></li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- 2. The customer problem (Figma 3:2689), white text on a darkened full-bleed photo. -->
+<section class="slide slide--inset slide--photo" id="problem-customer" aria-labelledby="problem-customer-h">
+  <div class="slide__in">
+    <p class="eyebrow">The CUSTOMER problem</p>
+    <div class="statement" id="problem-customer-h">
+      <p>Now more than ever, offline experiences are important for people to connect with the world around them in a meaningful way.</p>
+      <p>We’re committed to supporting businesses that provide these experiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. The business problem (Figma 3:2701) -->
+<section class="slide slide--inset" id="problem-business" aria-labelledby="problem-business-h">
+  <div class="slide__in">
+    <p class="eyebrow">The BUSINESS problem</p>
+    <div class="statement statement--tight" id="problem-business-h">
+      <p>Despite AI advances, large corporate inefficiency is high and detached from the stories of local businesses.</p>
+      <p>The uniqueness of these businesses fall into the faceless chain of homogenous marketplaces.</p>
+    </div>
+    <ul class="shots" aria-label="The big marketplaces today">
+      <li><img src="assets/competitor-airbnb.jpg" alt="Airbnb Experiences: search results for Melbourne." width="576" height="510" loading="lazy" decoding="async" /></li>
+      <li><img src="assets/competitor-gyg.jpg" alt="GetYourGuide: search results for Melbourne." width="576" height="510" loading="lazy" decoding="async" /></li>
+      <!-- Placeholder: Viator's site asked for a verification step, screenshot to come. -->
+      <li><div class="ph" aria-hidden="true"></div></li>
+      <li><img src="assets/competitor-klook.jpg" alt="Klook: search results for Melbourne." width="576" height="510" loading="lazy" decoding="async" /></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4. Our approach (Figma 3:2712) -->
+<section class="slide slide--inset" id="approach" aria-labelledby="approach-h">
+  <div class="slide__in">
+    <div class="ap">
+      <div class="ap__intro">
+        <p class="eyebrow">APPROACH</p>
+        <h2 id="approach-h">Our approach</h2>
+        <p class="lede">Our ambition is to grow, sustainably. But to ensure the people who deliver these experiences are recognised and have the right tools to operate as efficiently as possible, so they can get back to managing their experiences and customers irl.</p>
       </div>
-      <div class="mock browser" role="img" aria-label="Search results page for things to do in Victoria this weekend, showing generic big tours and review pages.">
-        
-        <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">things to do in Victoria this weekend</span></div>
-        <div class="browser__body" aria-hidden="true">
-          <div class="res"><p class="res__url label">victoriadaytours.com.au <span class="res__ad">Sponsored</span></p><p class="res__t">Victoria Day Tours: coach tours and group packages</p><p class="res__s">Book the big-name attractions in one go. Coach pick-ups from the city, group tickets and bundles.</p></div>
-          <div class="res"><p class="res__url label">travelreviews.com.au</p><p class="res__t">Top 10 things to do in Victoria this weekend</p><p class="res__s">Our pick of markets, wineries, bay cruises and the big attractions. Updated weekly.</p></div>
-          <div class="res"><p class="res__url label">toursandtickets.com.au</p><p class="res__t">Victoria attractions and tours: book online</p><p class="res__s">Hundreds of tours and tickets in one place, from sightseeing buses to river cruises.</p></div>
-          <div class="res res--gap"><p class="res__page label">Page 2</p><p class="res__url label">getrealdays.com</p><p class="res__t">Make a dovetailed keepsake box, Example Woodshop</p><p class="res__s">Two days at the bench, cutting dovetails by hand. Run by the owner.</p></div>
+      <div class="ap__side">
+        <dl class="ap__list">
+          <!-- CONFLICT B2: "We cut the giants in half and we plan to stay that way." reads as a price promise. Suggested: "We charge about half what the giants do." -->
+          <div><dt>Low commission fee</dt><dd>We cut the giants in half and we plan to stay that way.</dd></div>
+          <div><dt>Getting customers to your experience</dt><dd>Using SEO/AEO and paid ads to target people in your area.</dd></div>
+          <div><dt>Curated experiences, informed by locals</dt><dd>Stories &gt; numbers.</dd></div>
+          <div><dt>Search and product innovation</dt><dd>Spotting booking trends and testing them, understanding your business pain-points and solving for them.</dd></div>
+        </dl>
+        <!-- CONFLICT B1: payment is sent to the business's Stripe account at 6am the day after, and reaches the bank 1 to 2 business days later. Suggested: "You take care of the customer once they turn up. The day after, your payment is sent to your Stripe account, and it reaches your bank 1 to 2 business days later. Simple." -->
+        <div class="ap__goal">
+          <p><strong>Our end goal for you:</strong></p>
+          <p>You take care of the customer once they turn up then see the payment land in your account the next day. Simple.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 2. What RealDays is -->
-<section class="slide" id="what" aria-labelledby="what-h">
+<!-- 5. The high level customer journey (Figma 3:3004, designer note 6:4242) -->
+<section class="slide slide--inset" id="journey" aria-labelledby="journey-h">
   <div class="slide__in">
-    <p class="eyebrow">What RealDays is</p>
-    <div class="split">
-      <div>
-        <h2 id="what-h">A booking site for small, owner-run experiences.</h2>
-        <p class="lede">RealDays lists experiences run by the people who started them, in Victoria and Bali. A customer finds you, sends a booking request, and pays once you've said yes. You get their name, phone and email. They get a confirmation and your waiver. No subscription, no lock-in, no exclusivity. Keep taking bookings every other way you do now.</p>
-        <p class="proof label">Salty Cowboy, Bali. The first business on RealDays. <q><span class="tbc-text">One line from Salty Cowboy in their own words</span><span class="tbc">To confirm</span></q></p>
-      </div>
-      <a class="card" href="https://getrealdays.com/bali/salty-cowboy/beach-ride/" target="_blank" rel="noopener">
-        <img src="assets/salty-cowboy-beach-ride.jpg" width="800" height="600" alt="Horse and rider on the beach with rice fields behind, Salty Cowboy Bali" loading="lazy" decoding="async" />
-        <div class="card__body">
-          <h3 class="card__title">Guided horse ride through rice fields to the beach</h3>
-          <p class="card__loc label">1-1.5 hr · Salty Cowboy · Bali</p>
+    <p class="eyebrow">THE CUSTOMER END</p>
+    <h2 id="journey-h">The high level customer journey</h2>
+    <!-- CONFLICT B19: "such as Shopify and Uber" is unverified. Suggested: "such as Amazon and Shopify" (stripe.com/docs/security). -->
+    <p class="lede jr-intro">Payments run on Stripe’s payment rails which is the same one that big companies such as Shopify and Uber use, so you know you and your customers’ details are kept secure. RealDays does not see any account details.</p>
+    <div class="jr">
+      <div class="jr__src">
+        <ul class="jr__channels label" aria-label="Where customers come from">
+          <li>Search (AI/GOOGLE)</li>
+          <li>Paid targeted ads</li>
+          <li>SOCIAL MEDIA</li>
+          <li>EMAIL REFERRALS</li>
+          <li>Featured story</li>
+        </ul>
+        <div class="jr__links" aria-hidden="true">
+          <img src="assets/journey-connector-1.svg" alt="" width="42.7871" height="72.7899" />
+          <img class="jr__flip" src="assets/journey-connector-2.svg" alt="" width="37.6042" height="72.7899" />
         </div>
-      </a>
+      </div>
+      <ol class="jr__frames">
+        <li>
+          <div class="mock phone" role="img" aria-label="Phone screen: the Example Woodshop page with a date picker.">
+            <div aria-hidden="true">
+              <p class="m-top label">RealDays</p>
+              <img class="m-photo" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="603" loading="lazy" decoding="async" />
+              <p class="m-title">Make a dovetailed keepsake box</p>
+              <div class="m-days"><span>Sat<b>31 Oct</b></span><span class="on">Sat<b>7 Nov</b></span><span>Sat<b>14 Nov</b></span></div>
+              <span class="m-btn">Request to book</span>
+            </div>
+          </div>
+          <p class="jr__cap label"><span class="jr__n">1</span>Your RealDays page + REQUEST TIME</p>
+        </li>
+        <li>
+          <!-- CONFLICT B3: alt text says Saturday 10am, the mock says Sat 14 to Sun 15 Nov, 9am. -->
+          <div class="mock email" role="img" aria-label="Email to the business: a booking request for Saturday 10am with Accept and Decline buttons.">
+            <div aria-hidden="true">
+              <p class="m-top label">New booking request</p>
+              <div class="em__hd">
+                <p><i class="label">From</i>RealDays</p>
+                <p><i class="label">To</i>Sam Taylor</p>
+                <p><i class="label">Subject</i><b>New booking request</b></p>
+              </div>
+              <p class="jr__ask">Sam would like to book:<br />Make a dovetailed keepsake box.</p>
+              <!-- CONFLICT B3: there is no deposit-and-balance flow, the phone number is Ro's real mobile, and $ should be A$. Suggested: "1 person, A$480. Card held, charged when you accept" and "Phone: 0400 000 000". -->
+              <p class="jr__det"><b>When:</b> Sat 14 to Sun 15 Nov 2026, 9am<br />1 person, Deposit $240, balance $240 due later<br />Reference: TH-L84ELZ<br />Phone: 0466567953</p>
+              <div class="m-actions"><span class="m-btn">Accept</span><span class="m-btn m-btn--2">Decline</span></div>
+            </div>
+          </div>
+          <!-- CONFLICT B22: the 24-hour window to confirm is no longer anywhere in the deck. Suggested caption: "YOU CONFIRM VIA EMAIL WITHIN 24 HOURS". -->
+          <p class="jr__cap label"><span class="jr__n">2</span>YOU CONFIRM VIA EMAIL</p>
+        </li>
+        <li>
+          <div class="mock meme" role="img" aria-label="Meme: a man in a suit grinning with two thumbs up.">
+            <img class="meme__img--thumbs" src="assets/journey-thumbs-up.jpg" alt="" width="560" height="547" loading="lazy" decoding="async" />
+          </div>
+          <p class="jr__cap jr__cap--narrow label"><span class="jr__n">3</span>THEY ARRIVE AND COMPLETE ACTIVITY</p>
+        </li>
+        <li>
+          <!-- The business end (Figma note 6:4242): A$480 less Stripe's card fee for Australian cards (1.7% plus 30c), sent the day after the last session. -->
+          <div class="mock payout" role="img" aria-label="The business's Stripe payout: A$471.54 for booking TH-L84ELZ, sent Monday 16 November, arriving in the bank in 1 to 2 business days.">
+            <div aria-hidden="true">
+              <p class="m-top label">Example Woodshop · Payouts</p>
+              <p class="payout__amt">A$471.54</p>
+              <p class="m-sub label">Sent Mon 16 Nov, 6am</p>
+              <dl class="payout__rows">
+                <div><dt>Booking TH-L84ELZ</dt><dd>A$480.00</dd></div>
+                <div><dt>Card fee</dt><dd>−A$8.46</dd></div>
+                <div class="payout__total"><dt>Paid to you</dt><dd>A$471.54</dd></div>
+              </dl>
+              <p class="payout__bank">To your bank ···· 4821<br />Arrives in 1 to 2 business days</p>
+              <p class="payout__by label">Powered by <img src="assets/stripe-wordmark.svg" alt="" width="48" height="20" /></p>
+            </div>
+          </div>
+          <p class="jr__cap jr__cap--narrow label"><span class="jr__n">4</span>PAYMENT IS DEPOSITED INTO YOUR ACCOUNT</p>
+        </li>
+      </ol>
+    </div>
+    <p class="lede jr-edge"><strong>Edge cases:</strong> We know different businesses have different approaches to booking, see here for the <a href="#payments">full detail</a> and how we solve for edge cases and payment handling.</p>
+  </div>
+</section>
+
+<!-- 6. Marketing (Figma 4:3290) -->
+<section class="slide slide--inset" id="marketing" aria-labelledby="marketing-h">
+  <div class="slide__in">
+    <p class="eyebrow">MARKETING</p>
+    <h2 id="marketing-h">Marketing to your future customers, how we’re doing it right now.</h2>
+    <!-- CONFLICT B5: "6-8 months to see meaningful growth" sits awkwardly beside the 1 May 2027 goal. If Ro doesn't mean it: "We’re starting with getting the basics right, so growth will take time." -->
+    <p class="lede mk-intro">We’re starting with getting the basics right, this means traction will take time. Full transparency, we estimate it’ll take around 6-8 months to see meaningful growth.</p>
+    <div class="mk">
+      <div class="mk__group">
+        <p class="label">OPTIMISING FOR SEARCH AND ASK (SEO/AEO)</p>
+        <div class="mk__row">
+          <div class="mock browser" role="img" aria-label="Search results page with Example Woodshop's listing first and grey bars for the others.">
+            <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">woodworking class victoria</span></div>
+            <div class="browser__body" aria-hidden="true">
+              <div class="res res--hit"><p class="label">getrealdays.com</p><span class="m-title">Make a dovetailed keepsake box, Example Woodshop</span><span class="bar"></span></div>
+              <div class="res"><span class="bar bar--title"></span><span class="bar bar--s"></span></div>
+              <div class="res"><span class="bar bar--title"></span><span class="bar bar--s"></span></div>
+            </div>
+          </div>
+          <!-- CONFLICT B21: the 26 Oct design rule said no third-party logos in mockups. Implemented as in Figma; if Ro doesn't want the real marks, use four plain outlined circles with no text. -->
+          <div class="mock chat" role="img" aria-label="Chat: a question about woodworking in Victoria and an answer naming Example Woodshop.">
+            <div aria-hidden="true">
+              <p class="chat__q">Where can I try woodworking in Victoria?</p>
+              <p class="chat__a">Example Woodshop runs a two-day class making a dovetailed keepsake box, A$480 per person. You can send a booking request on RealDays.</p>
+              <div class="chat__marks">
+                <img src="assets/ai-openai.svg" alt="" width="16.65" height="16.5" />
+                <img src="assets/ai-meta.svg" alt="" width="20.0895" height="13.3436" />
+                <img src="assets/ai-claude.svg" alt="" width="14.9185" height="14.9185" />
+                <img src="assets/ai-gemini.svg" alt="" width="41" height="15" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mk__cap">RealDays is built to show up when people search for what to do based off site URL structure and keywords, sending them to your page.</p>
+      </div>
+      <div class="mk__group">
+        <p class="label">SOCIAL AND EMAILS</p>
+        <div class="mk__row">
+          <div class="mock post" role="img" aria-label="Instagram post from Example Woodshop and RealDays: a photo of a dovetail joint, a caption, and the like, comment and share buttons.">
+            <div aria-hidden="true">
+              <div class="ig__head"><span class="ig__av">EW</span><span class="ig__who">Example Woodshop <i>with</i> RealDays<small class="label">Collab post</small></span></div>
+              <img class="m-photo ig__photo" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="603" loading="lazy" decoding="async" />
+              <div class="ig__acts">
+                <img src="assets/icon-heart.svg" alt="" width="18" height="18" />
+                <img src="assets/icon-comment.svg" alt="" width="18" height="18" />
+                <img src="assets/icon-share.svg" alt="" width="18" height="18" />
+              </div>
+              <p class="m-cap">Example Woodshop Dovetails cut by hand, two days at the bench. Book the keepsake box class on RealDays.</p>
+            </div>
+          </div>
+          <div class="mock email" role="img" aria-label="Email from RealDays to a past customer, subject: Want more? This one's close to you, with one photo and a See the experience button.">
+            <div aria-hidden="true">
+              <div class="em__hd">
+                <p><i class="label">From</i>RealDays</p>
+                <p><i class="label">To</i>Sam Taylor</p>
+                <p><i class="label">Subject</i><b>Want more? This one's close to you.</b></p>
+              </div>
+              <p class="m-body">Hi Sam, you booked with us before. Here's another small business near you.</p>
+              <img class="m-photo em__photo" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="603" loading="lazy" decoding="async" />
+              <p class="m-title">Make a dovetailed keepsake box</p>
+              <span class="m-btn">See the experience</span>
+            </div>
+          </div>
+        </div>
+        <p class="mk__cap mk__cap--s">Getting you local reach through targeted ads, collab posts and showing the right customers, relevant activities.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 3. What it costs -->
-<section class="slide" id="cost" aria-labelledby="cost-h">
+<!-- 7. Our priority roadmap so far (Figma 4:3699) -->
+<section class="slide slide--inset" id="roadmap" aria-labelledby="roadmap-h">
+  <div class="slide__in">
+    <p class="eyebrow">PRIORITIES</p>
+    <h2 id="roadmap-h">Our priority roadmap so far</h2>
+    <ol class="rm">
+      <li>
+        <p class="rm__date label"><span class="rm__n">0</span>now</p>
+        <h3><svg class="rm__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M4 10v10h16V10"/><path d="M3 10l2-6h14l2 6z"/><path d="M10 20v-5h4v5"/></svg>Onboarding businesses</h3>
+        <p>Getting the basics right. This is a period of heavy learning and working closely with businesses.</p>
+        <div class="rm__sub"><p class="label">PRODUCT AND Tech</p><p>Setup base of homepage, booking solution and payments.</p></div>
+        <div class="rm__sub"><p class="label">MARKETING and research</p><p>Setup site SEO/AEO using best practice and google search console. Speak with as many businesses as possible and adapt to fit needs.</p></div>
+      </li>
+      <li>
+        <p class="rm__date label"><span class="rm__n">1</span>DEC 2026</p>
+        <h3><svg class="rm__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M3 10v4h3l7 4V6l-7 4z"/><path d="M16.5 9a4 4 0 0 1 0 6"/><path d="M19 6.5a7.5 7.5 0 0 1 0 11"/></svg>Customer reach</h3>
+        <p>With enough businesses onboard, we can begin to go hard with customer reach.</p>
+        <div class="rm__sub"><p class="label">PRODUCT AND Tech</p><p>Dashboard build, business self-onboarding, calendar integration.</p></div>
+        <!-- CONFLICT B8: "Brand and marketing approach has established, specific tactics." is build status in business-facing copy, and ungrammatical. Ro to reword or delete. -->
+        <div class="rm__sub"><p class="label">MARKETING and research</p><p>Brand and marketing approach has established, specific tactics.</p></div>
+      </li>
+      <li>
+        <p class="rm__date label"><span class="rm__n">2</span>FEB 2027</p>
+        <h3><svg class="rm__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Refinement</h3>
+        <p>With customer and business acquisition continuing, we’ll have data to help us improve.</p>
+        <!-- Claude's best guess for Ro to check (was "xxxx" in Figma). -->
+        <div class="rm__sub"><p class="label">PRODUCT AND Tech</p><p>Rescheduling built into the site, reviews after each experience, and a faster booking flow shaped by what customers actually do.</p></div>
+        <!-- CONFLICT B9: this sentence is unfinished in Figma, Ro to finish it. -->
+        <div class="rm__sub"><p class="label">MARKETING and research</p><p>With higher traffic, we intend customer retention, understanding</p></div>
+      </li>
+      <li>
+        <p class="rm__date label"><span class="rm__n">3</span>MAY 2027</p>
+        <!-- CONFLICT B7: an internal go/no-go decision shown to businesses, and "30 day notice" clashes with at least 60 days' written notice (by 2 Mar 2027) and "leave any time". Suggested: title "Pricing starts"; text "The free period ends on 1 May 2027. You get written notice by 2 March 2027, and you can leave any time."; sub-label "WHAT THIS MEANS"; text "From 1 May 2027, it’s 12% including GST on each booking made through RealDays. Card fees are included." -->
+        <h3><svg class="rm__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false"><path d="M12 21v-8"/><path d="M12 13L6.5 7.5M12 13l5.5-5.5"/><path d="M6 12V7h5M18 12V7h-5"/></svg>Expansion or close</h3>
+        <p>Decide if RealDays is valuable enough to continue building on.</p>
+        <div class="rm__sub"><p class="label">WHAT THIS MEANS</p><p>This is our deadline to measure success of platform so far. If unsuccessful (we hope not!) we will give businesses a 30 day notice to off-board the platform and close accounts.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 8. What it costs (Figma 3:1441) -->
+<section class="slide" id="pricing" aria-labelledby="pricing-h">
   <div class="slide__in">
     <p class="eyebrow">What it costs</p>
-    <h2 id="cost-h">Free until May 2027. Then 12% on the bookings we bring you.</h2>
-    <p class="lede">Nothing to join. Nothing a month. Until 1 May 2027, you pay only the card fee on each booking, about 1.7% plus 30 cents for Australian cards, the same as taking a card at the counter. From 1 May 2027, it's 12% of each booking made through RealDays, with GST and the card fee included. If a booking is refunded in full, so is our fee.</p>
+    <!-- CONFLICT B10: "only the bookings we bring you" suggests a business's own customers are free. Suggested: "Free until May 2027. Then 12% on bookings made through RealDays." -->
+    <h2 id="pricing-h">Free until May 2027. Then 12% on only the bookings we bring you.</h2>
+    <!-- CONFLICT B12: no mention of notice or leaving. Suggested: add "You’ll get written notice by 2 March 2027, and you can leave any time." -->
+    <p class="lede">Until 1 May 2027, you pay only the card fee on each booking, about 1.7% plus 30 cents for Australian cards, the same as taking a card at the counter. From 1 May 2027, it's 12% of each booking made through RealDays, with GST and the card fee included. If a booking is refunded in full, so is our fee.</p>
     <div class="table-wrap">
       <table class="compare">
         <caption class="sr-only">RealDays compared with Airbnb Experiences, GetYourGuide and Viator</caption>
+        <colgroup><col class="c1" /><col class="c2" /><col class="c3" /><col class="c4" /><col class="c5" /></colgroup>
         <thead>
           <tr><th scope="col">How we compare**</th><th scope="col">RealDays</th><th scope="col">Airbnb Experiences</th><th scope="col">GetYourGuide</th><th scope="col">Viator</th></tr>
         </thead>
         <tbody>
+          <!-- CONFLICT B11: the 12% includes GST as well as card fees. Suggested: "12% incl. GST and card fees". -->
           <tr><th scope="row">Commission</th><td>12% incl. card fees</td><td>20%*</td><td>25%*</td><td>25%*</td></tr>
           <tr><th scope="row">You get the customer's email</th><td>Yes</td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td></tr>
           <tr><th scope="row">Paid</th><td>Day after the experience</td><td><span class="tbc-text">After the experience</span></td><td><span class="tbc-text">Twice monthly</span></td><td><span class="tbc-text">30 days after</span></td></tr>
@@ -100,376 +336,61 @@
   </div>
 </section>
 
-<!-- 4. How a booking works -->
-<section class="slide" id="booking" aria-labelledby="booking-h">
+<!-- 9. Payment guide (Figma 6:4076) -->
+<section class="slide" id="payments" aria-labelledby="payments-h">
   <div class="slide__in">
-    <p class="eyebrow">How a booking works</p>
-    <h2 id="booking-h">Nothing is booked until you say yes.</h2>
-    <p class="lede">Every booking on RealDays starts as a request. You see it, check your own calendar, and accept or decline. The customer's card is only charged once you've accepted. No double bookings, no surprises on a day you'd already filled, and no penalty for saying no.</p>
-    <ol class="steps">
-      <li>
-        <div class="shot mock phone" role="img" aria-label="Phone screen: the Example Woodshop page with a date picker.">
-          
-          <div aria-hidden="true">
-            <p class="m-top label">RealDays</p>
-            <img class="m-photo" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="675" loading="lazy" decoding="async" />
-            <p class="m-title">Make a dovetailed keepsake box</p>
-            <p class="m-sub label">Example Woodshop · 2 days · A$480 per person</p>
-            <div class="m-days"><span>Sat<b>31 Oct</b></span><span class="on">Sat<b>7 Nov</b></span><span>Sat<b>14 Nov</b></span></div>
-            <span class="m-btn">Request to book</span>
-          </div>
-        </div>
-        <strong>They find you.</strong><span>A date, a time, how many are coming.</span>
-      </li>
-      <li>
-        <div class="shot mock phone" role="img" aria-label="Phone screen: a filled-in booking request form with name, phone, email and card. Nothing is charged yet.">
-          
-          <div aria-hidden="true">
-            <p class="m-top label">Your request</p>
-            <p class="m-title">Your details</p>
-            <p class="m-sub label">Example Woodshop · Sat 7 Nov</p>
-            <span class="m-field"><i>Name</i>Sam Taylor</span>
-            <span class="m-field"><i>Phone</i>0400 000 000</span>
-            <span class="m-field"><i>Email</i>sam@example.com</span>
-            <span class="m-field"><i>Card</i>•••• •••• •••• 4242</span>
-            <p class="m-note label">Nothing is charged yet</p>
-            <span class="m-btn">Send request</span>
-          </div>
-        </div>
-        <strong>They send a request.</strong><span>Card details in. Charged only after you say yes.</span>
-      </li>
-      <li>
-        <div class="shot mock email" role="img" aria-label="Email to the business: a booking request for Saturday 10am with Accept and Decline buttons.">
-          
-          <div aria-hidden="true">
-            <p class="m-top label">New booking request</p>
-            <p class="m-from label">From RealDays · To Example Woodshop</p>
-            <p class="m-title">Sam would like to book Saturday 7 Nov</p>
-            <p class="m-sub label">Make a dovetailed keepsake box · 2 people · A$960</p>
-            <p class="m-body">Sam's card is held, not charged. Accept to confirm the booking, or decline.</p>
-            <p class="m-note label">Answer within 24 hours</p>
-            <div class="m-actions"><span class="m-btn">Accept</span><span class="m-btn m-btn--2">Decline</span></div>
-          </div>
-        </div>
-        <strong>You say yes or no.</strong><span>It reaches you by email. Answer within 24 hours.</span>
-      </li>
-      <li>
-        <div class="shot mock phone" role="img" aria-label="Phone screen: the customer's confirmation, with the waiver and how to reach the business.">
-          
-          <div aria-hidden="true">
-            <p class="m-top label">Confirmed</p>
-            <p class="m-title">You're booked in.</p>
-            <p class="m-sub label">Example Woodshop · Sat 7 Nov</p>
-            <span class="m-row"><i>Waiver</i>Attached</span>
-            <span class="m-row"><i>Meet at</i>The studio</span>
-            <span class="m-row"><i>Questions</i>Message the business</span>
-            <p class="m-body">A confirmation email with these details is on its way.</p>
-            <span class="m-btn m-btn--2">Add to calendar</span>
-          </div>
-        </div>
-        <strong>It's confirmed.</strong><span>Waiver and contact details sent to the customer.</span>
-      </li>
-      <li>
-        <div class="shot shot--ph" role="img" aria-label="Photo placeholder: they show up.">
-          <p class="label">Photo placeholder<br />They show up</p>
-        </div>
-        <strong>They show up.</strong><span>You run it your way. Your money is sent the day after the experience.</span>
-      </li>
-    </ol>
-    <p class="note label">Need to move a date? Sort it with the customer directly and let us know. The money doesn't move.</p>
-    <p class="banner">We're working on an end-to-end booking solution, so you'll be able to adjust it in your calendar.</p>
-  </div>
-</section>
-
-<!-- 5. Your money -->
-<section class="slide" id="money" aria-labelledby="money-h">
-  <div class="slide__in">
-    <p class="eyebrow">Your money</p>
-    <h2 id="money-h">Paid out the day after the experience.</h2>
-    <p class="lede">Payments run on Stripe, the same system behind Airbnb, Uber and Shopify. You open a Stripe account through RealDays in about ten minutes with your ABN and bank details. From then on, every accepted booking is held safely and sent to you the day after the experience runs. Stripe then pays it into your bank on its normal payout timing.</p>
-    <ul class="points points--2">
-      <li><strong>What you pay.</strong>Only the card fee, about 1.7% plus 30 cents a booking for Australian cards, until 1 May 2027. Nothing else.</li>
-      <li><strong>Cancellations.</strong><span class="tbc-text">Customers can cancel free up to 48 hours before. Inside 48 hours, they can reschedule or forfeit. If you or the weather cancel, the customer gets a full refund.</span><span class="tbc">To confirm</span> You can set a longer window for multi-day experiences.</li>
-      <li><strong>Refunds.</strong>RealDays issues every refund within one business day, under the policy above. Because the money is held until after the experience, a refund never has to come back out of your bank.</li>
-      <li><strong>Disputes.</strong>If a customer's bank ever queries a charge, RealDays pays the dispute fee and handles the paperwork. Because every booking is one you accepted, "I didn't authorise this" disputes almost never happen.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 6. What we ask of you -->
-<section class="slide" id="ask" aria-labelledby="ask-h">
-  <div class="slide__in">
-    <p class="eyebrow">What we ask of you</p>
-    <h2 id="ask-h">Ten minutes a week. That's it.</h2>
-    <p class="lede">RealDays only works if customers can trust a yes. In return for the bookings, we ask four things:</p>
-    <ol class="points points--4">
-      <li><strong>Answer every request within 24 hours.</strong>A quick no is better than a slow yes.</li>
-      <li><strong>Tell us the moment anything changes.</strong>A cancelled day, a moved date, a new price. One message is enough.</li>
-      <li><strong>Send us any waivers.</strong>We'll include them in the customer's confirmation email.</li>
-      <li><strong>Treat RealDays customers as your own.</strong>They are. You have their details, and they'll come back to you directly.</li>
-    </ol>
-    <p class="pull">Everything else, the listing, the photos, the marketing, the money, is ours to do.</p>
-  </div>
-</section>
-
-<!-- 7. Fits your tools (draft) -->
-<section class="slide" id="tools" aria-labelledby="tools-h">
-  <div class="slide__in">
-    <p class="eyebrow">Fits your tools <span class="draft">Draft</span></p>
-    <h2 id="tools-h">Keep what works. Add RealDays alongside it.</h2>
-    <p class="lede">You don't change your booking system, your calendar or your website. RealDays requests arrive by email, you check them against whatever you use today, and you answer. We build your listing from your existing site and socials, and you approve it before it goes live.</p>
-    <div class="tools-row">
-      <ul class="points points--1">
-        <li><strong>Today.</strong>Requests by email. Your calendar stays yours.</li>
-        <li><strong>Next. <span class="tbc">To confirm</span></strong><span class="tbc-text">Google Calendar: an accepted booking lands in your calendar automatically. Month to confirm.</span></li>
-      </ul>
-      <figure class="cals" role="img" aria-label="Two calendars for the same week, Your calendar and RealDays, with the same Saturday 9am slot highlighted in both.">
-          <div class="cals__row" aria-hidden="true">
-            <div class="mock"><div class="cal"><p class="label cal__t">Your calendar</p><div class="cal__g"><span></span><b class="label">Wed</b><b class="label">Thu</b><b class="label">Fri</b><b class="label">Sat</b><b class="label">Sun</b><b class="label">9am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c on"></span><span class="cal__c"></span><b class="label">10am</b><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><b class="label">11am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><b class="label">1pm</b><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span></div></div></div>
-            <p class="cals__eq">=</p>
-            <div class="mock"><div class="cal"><p class="label cal__t">RealDays</p><div class="cal__g"><span></span><b class="label">Wed</b><b class="label">Thu</b><b class="label">Fri</b><b class="label">Sat</b><b class="label">Sun</b><b class="label">9am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c on"></span><span class="cal__c"></span><b class="label">10am</b><span class="cal__c"></span><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><b class="label">11am</b><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c busy"></span><b class="label">1pm</b><span class="cal__c busy"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span><span class="cal__c"></span></div></div></div>
-          </div>
-          <figcaption class="label">Same slot, same time. Nothing double-booked.</figcaption>
-        </figure>
-    </div>
-  </div>
-</section>
-
-<!-- 8. What's coming, and when (draft). Dates are rough and to confirm. -->
-<section class="slide" id="next" aria-labelledby="next-h">
-  <div class="slide__in">
-    <p class="eyebrow">What's next <span class="draft">Draft</span></p>
-    <h2 id="next-h">What we're building, and when.</h2>
-    <p class="label tl__note">Dates are rough <span class="tbc">To confirm</span></p>
-    <ol class="tl">
-      <li>
-        <p class="tl__date label"><span class="tl__dot">1</span>Today</p>
-        <div class="tl__main"><strong>Basic payments</strong><p>Customers send a request. You confirm or reject it over email. Your listing is a plain page.</p></div>
-        <div class="tl__reach"><p class="label">Search</p><p>Listing pages live, with the facts search and AI tools read.</p></div>
-        <div class="tl__reach"><p class="label">Social and email</p><p>Weekly posts about you, tagged on Instagram and Facebook.</p></div>
-      </li>
-      <li>
-        <p class="tl__date label"><span class="tl__dot">2</span><span class="tbc-text">Dec 2026</span></p>
-        <div class="tl__main"><strong>Google Calendar</strong><p>Accept a request and the booking lands in your calendar on its own.</p></div>
-        <div class="tl__reach"><p class="label">Search</p><p>Pages for each place and each kind of experience.</p></div>
-        <div class="tl__reach"><p class="label">Social and email</p><p>Emails to past customers when you have a quiet slot.</p></div>
-      </li>
-      <li>
-        <p class="tl__date label"><span class="tl__dot">3</span><span class="tbc-text">Feb 2027</span></p>
-        <div class="tl__main"><strong>Business dashboard</strong><p>Sign up and log in to manage your profile, prices, quiet slots and bookings.</p></div>
-        <div class="tl__reach"><p class="label">Search</p><p>Details and photos you update keep your pages current.</p></div>
-        <div class="tl__reach"><p class="label">Social and email</p><p>Paid ads aimed at the area around your business.</p></div>
-      </li>
-      <li>
-        <p class="tl__date label"><span class="tl__dot">4</span><span class="tbc-text">From May 2027</span></p>
-        <div class="tl__main"><strong>More features</strong><p>Real customer reviews, and more, shaped by what businesses ask us for.</p></div>
-        <div class="tl__reach"><p class="label">Search</p><p>Monthly checks of search and AI answers. Reviews add to your pages.</p></div>
-        <div class="tl__reach"><p class="label">Social and email</p><p>More local groups and partners. The monthly note shows what worked.</p></div>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- 8. How we bring customers (draft) -->
-<section class="slide" id="marketing" aria-labelledby="marketing-h">
-  <div class="slide__in">
-    <p class="eyebrow">How we bring customers <span class="draft">Draft</span></p>
-    <h2 id="marketing-h">What we actually do to fill your quiet days.</h2>
-    <p class="lede">No vague marketing. A short list of work, done every week, that you can check.</p>
-    <ul class="mk">
-      <li>
-        <p class="label">Search</p>
-        <div class="mock browser" role="img" aria-label="Search results page with Example Woodshop's listing first and grey bars for the others.">
-          
-          <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">woodworking class victoria</span></div>
-          <div class="browser__body" aria-hidden="true">
-            <div class="res res--hit"><p class="label">getrealdays.com</p><span class="m-title">Make a dovetailed keepsake box, Example Woodshop</span><span class="bar"></span></div>
-            <div class="res"><span class="bar bar--title"></span><span class="bar bar--s"></span></div>
-            <div class="res"><span class="bar bar--title"></span><span class="bar bar--s"></span></div>
-          </div>
-        </div>
-        <p>RealDays is built to show up when people search for what to do in Victoria, and to send them to your page.</p>
-      </li>
-      <li>
-        <p class="label">Ask</p>
-        <div class="mock chat" role="img" aria-label="Chat: a question about pottery in Victoria and an answer naming Example Woodshop.">
-          
-          <div aria-hidden="true">
-            <p class="chat__q">Where can I try woodworking in Victoria?</p>
-            <p class="chat__a">Example Woodshop runs a two-day class making a dovetailed keepsake box, A$480 per person. You can send a booking request on RealDays.</p>
-          </div>
-        </div>
-        <p>And when they ask ChatGPT or Perplexity the same question.</p>
-      </li>
-      <li>
-        <p class="label">Your page</p>
-        <div class="mock page" role="img" aria-label="Snippet of the Example Woodshop page on RealDays.">
-          
-          <div aria-hidden="true">
-            <img class="m-photo" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="675" loading="lazy" decoding="async" />
-            <p class="m-title">Make a dovetailed keepsake box</p>
-            <p class="m-sub label">Example Woodshop · Victoria · A$480 per person</p>
-            <span class="bar"></span><span class="bar bar--s"></span>
-          </div>
-        </div>
-        <p>A page about your business on RealDays, written with you, with your photos and your story.</p>
-      </li>
-      <li>
-        <p class="label">Social</p>
-        <div class="mock post" role="img" aria-label="Instagram post from Example Woodshop and RealDays: a photo of a dovetail joint, a caption, and the like, comment and share buttons.">
-          <div aria-hidden="true">
-            <div class="ig__head"><span class="ig__av">EW</span><span class="ig__who"><b>Example Woodshop</b> <i>with</i> <b>RealDays</b><small class="label">Collab post</small></span><span class="ig__net label">Instagram</span></div>
-            <img class="m-photo m-photo--sq" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="600" loading="lazy" decoding="async" />
-            <div class="ig__acts"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20.5C5 15 3 11.5 3 8.5A4.5 4.5 0 0 1 12 6.7 4.5 4.5 0 0 1 21 8.5c0 3-2 6.5-9 12z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h16v11H9l-5 4z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 4 3 11l7 3 3 7z"/></svg></div>
-            <p class="m-cap"><b>Example Woodshop</b> Dovetails cut by hand, two days at the bench. Book the keepsake box class on RealDays.</p>
-          </div>
-        </div>
-        <p>A post about you on Instagram and Facebook every week, tagged. Collab posts land on both our feeds.</p>
-      </li>
-      <li>
-        <p class="label">Email</p>
-        <div class="mock email em" role="img" aria-label="Email from RealDays to a past customer, subject: Want more? This one's close to you, with one photo and a See the experience button.">
-          <div aria-hidden="true">
-            <div class="em__hd">
-              <p><i class="label">From</i>RealDays</p>
-              <p><i class="label">To</i>Sam Taylor</p>
-              <p><i class="label">Subject</i><b>Want more? This one's close to you</b></p>
-            </div>
-            <p class="m-body">Hi Sam, you booked with us before. Here's another small business near you.</p>
-            <img class="m-photo m-photo--wide" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="600" loading="lazy" decoding="async" />
-            <p class="m-title">Make a dovetailed keepsake box</p>
-            <p class="m-sub label">Example Woodshop · 2 days · A$480 per person</p>
-            <span class="m-btn">See the experience</span>
-          </div>
-        </div>
-        <p>Emails to past RealDays customers when you have a quiet slot or something new.</p>
-      </li>
-      <li>
-        <p class="label">Local reach</p>
-        <div class="mock map" role="img" aria-label="Outline map of Victoria with a few dots.">
-          
-          <svg viewBox="0 0 184 142" aria-hidden="true" focusable="false"><path d="M0 4.0 L20 7.9 L40 27.4 L60 50.8 L80 54.7 L100 57.3 L120 56.0 L138 58.6 L146 76.8 L160 92.4 L179.4 95.0 L166 102.8 L140 104.1 L120 115.8 L108 136.6 L104 126.2 L90 118.4 L78 117.1 L73 115.8 L71 106.7 L78 104.1 L70 110.6 L70 115.8 L66 118.4 L50 130.1 L40 123.6 L30 118.4 L12 117.1 L0 109.3Z" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/><g fill="currentColor"><circle cx="79" cy="103" r="3"/><circle cx="67" cy="112" r="3"/><circle cx="57" cy="96" r="3"/><circle cx="66" cy="76" r="3"/><circle cx="30" cy="87" r="3"/><circle cx="120" cy="103" r="3"/></g></svg>
-        </div>
-        <p>Victorian and Melbourne groups, and one local partner that puts RealDays in front of its guests.</p>
-      </li>
-    </ul>
-    <div class="mk-note">
-      <p class="label">A monthly note</p>
-      <div class="mock note-mock" role="img" aria-label="Monthly note email from RealDays to Example Woodshop with three sections: what we did, what it brought, and what we'll change.">
-        <div aria-hidden="true">
-          <p class="m-from label">From RealDays · To Example Woodshop</p>
-          <p class="m-title">Your monthly note</p>
-          <div class="note-mock__g">
-            <div><p class="m-sub label">What we did</p><ul><li>Posted about you on Instagram and Facebook every week</li><li>Emailed past customers about the keepsake box class</li><li>Added two new photos to your page</li></ul></div>
-            <div><p class="m-sub label">What it brought</p><ul><li>Booking requests from search, social and email</li><li>Which of the three led to a confirmed booking</li></ul></div>
-            <div><p class="m-sub label">What we'll change</p><ul><li>Try a Saturday morning post</li><li>Show the finished box first on your page</li></ul></div>
-          </div>
-        </div>
+    <div class="pg">
+      <div class="pg__intro">
+        <p class="eyebrow">Your PAYMENTS</p>
+        <h2 id="payments-h">Payment guide</h2>
+        <!-- CONFLICT B19: "the same system behind Airbnb, Uber and Shopify" is unverified. Suggested: "Stripe, the same system behind Amazon, Shopify and Atlassian". -->
+        <!-- CONFLICT B13: incomplete. Suggested addition: "A course over a few days pays the day after its last day, and a multi-week course the day after its first class. It usually reaches your bank 1 to 2 business days later. Customers can book up to 80 days ahead." -->
+        <p class="lede">Payments run on Stripe, the same system behind Airbnb, Uber and Shopify. You open a Stripe account through RealDays in about ten minutes with your ABN and bank details. From then on, every accepted booking is held safely and sent to you the day after the experience runs. Stripe then pays it into your bank on its normal payout timing.</p>
       </div>
-      <p>What we did, what it brought, what we'll change.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 9b. SEO and AI search (draft) -->
-<section class="slide" id="seo" aria-labelledby="seo-h">
-  <div class="slide__in">
-    <p class="eyebrow">How we bring customers: search <span class="draft">Draft</span></p>
-    <h2 id="seo-h">Be the answer when people search.</h2>
-    <p class="lede">People ask Google, and more and more ChatGPT and Perplexity, what to do this weekend. Our job is to make your page the clear answer, in plain words that both can read and repeat.</p>
-    <div class="plan-row">
-      <ol class="points points--1">
-        <li><strong>A page that answers the question.</strong>What it is, where, how long, how much and who it suits, in plain words, with your photos.</li>
-        <li><strong>Facts search tools can read.</strong>Behind every page, the same facts in a form Google and AI tools can quote correctly.</li>
-        <li><strong>Pages for every place and kind.</strong>Pages like woodworking in Victoria that link to each business on them.</li>
-        <li><strong>A monthly check.</strong>What people search, where RealDays shows up and what AI tools say. We fix the gaps.</li>
-      </ol>
-      <div class="plan-vis">
-        <div class="mock facts" role="img" aria-label="The facts search and AI tools read from a RealDays page: business, place, length, price, who it suits and how to book.">
-          <div aria-hidden="true">
-            <p class="m-top label">What search and AI tools read</p>
-            <p class="m-title">Make a dovetailed keepsake box</p>
-            <span class="m-row"><i>Business</i>Example Woodshop</span>
-            <span class="m-row"><i>Where</i>Victoria</span>
-            <span class="m-row"><i>Length</i>2 days</span>
-            <span class="m-row"><i>Price</i>A$480 per person</span>
-            <span class="m-row"><i>Good for</i>No experience needed</span>
-            <span class="m-row"><i>Book</i>Send a request on RealDays</span>
-          </div>
-        </div>
-        <div class="mock build" role="img" aria-label="How search builds over months: pages are found, then they rank, then AI tools start to quote them.">
-          <div aria-hidden="true">
-            <p class="m-top label">How it builds</p>
-            <div class="build__s"><span class="tl__dot">1</span><span><b>Pages are found</b>Search tools read and index each page.</span></div>
-            <div class="build__s"><span class="tl__dot">2</span><span><b>Pages start to rank</b>Place and kind pages link them together.</span></div>
-            <div class="build__s"><span class="tl__dot">3</span><span><b>AI tools quote you</b>Clear facts get repeated in answers.</span></div>
-            <p class="m-note label">Search takes months. We start now.</p>
-          </div>
-        </div>
+      <!-- Stripe's payment screen, screenshot Ro supplied 27 Oct 2026 (292 x 469), shown small so it stays sharp. -->
+      <img class="pg__ph" src="assets/payment-checkout.png" alt="Stripe's payment screen: Apple Pay, Link, a saved card and other ways to pay, then a Pay button." width="292" height="469" loading="lazy" decoding="async" />
+      <div class="pg__blocks">
+        <!-- Deposits and Rescheduling drafted by Claude from the booking service rules (BUSINESS-LAYER.md decisions 13 and 17; rescheduling isn't built yet), for Ro to check. -->
+        <div><h3>Deposits.</h3><p>You choose whether to take a deposit. If you do, the customer pays it when you accept the booking, and pays the balance from a link we email them a few days before. Anyone booking within 48 hours of the start pays in full. Both payments are held and sent to you the day after the experience.</p></div>
+        <div><h3>Rescheduling.</h3><p>If a customer asks to move and you agree, the booking and everything they’ve paid moves to the new session, and your payout follows the new date. While this is being built into the site, get in touch and we’ll move it for you.</p></div>
+        <!-- CONFLICT B16: no one-business-day promise, and a refund after a payout can come back out of what the business was paid. Suggested: "If a booking is refunded, the amount is taken from your payout. If your payout was already sent, it is taken back from your Stripe account or your next payouts. RealDays never adds a fee of its own to a refund." -->
+        <div><h3>Refunds.</h3><p>RealDays issues every refund within one business day, under the policy above. Because the money is held until after the experience, a refund never has to come back out of your bank.</p></div>
+        <!-- CONFLICT B14: RealDays doesn't set a 48-hour rule. Suggested: "Your own cancellation policy applies, as the customer saw it when they booked. They see the refund amount before they confirm." (and delete the multi-day sentence) -->
+        <!-- CONFLICT B15: if the business cancels, the customer gets a full refund or an agreed new time. Suggested: "If you cancel, including for weather or illness, the customer gets a full refund or a new time you both agree on." -->
+        <div><h3>Cancellations.</h3><p>Customers can cancel free up to 48 hours before. Inside 48 hours, they can reschedule or forfeit. If you or the weather cause a cancel, the customer gets a full refund.</p><p>You can set a longer window for multi-day experiences.</p></div>
+        <!-- CONFLICT B17: the business carries a lost dispute. Suggested: "If a customer’s bank ever queries a charge, RealDays handles the paperwork with Stripe and emails you when it opens and closes. If the bank sides with the customer, the disputed amount and Stripe’s dispute fee (currently A$25) come off your payouts." -->
+        <div><h3>Disputes.</h3><p>If a customer's bank ever queries a charge, RealDays pays the dispute fee and handles the paperwork. Because every booking is one you accepted, "I didn't authorise this" disputes almost never happen.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 9c. Social, email and paid ads (draft) -->
-<section class="slide" id="reach" aria-labelledby="reach-h">
+<!-- 10. Final note (Figma 6:4196) -->
+<section class="slide slide--note" id="feedback" aria-labelledby="feedback-h">
   <div class="slide__in">
-    <p class="eyebrow">How we bring customers: social, email and ads <span class="draft">Draft</span></p>
-    <h2 id="reach-h">Reach people near you, again and again.</h2>
-    <p class="lede">Three channels, each tied to where your business is. We set the plan with you first, and you approve anything that goes out under your name.</p>
-    <ul class="mk">
-      <li>
-        <p class="label">Social</p>
-        <div class="mock plan-mock" role="img" aria-label="A four week posting plan for Example Woodshop: a post, a collab post, a story and another post.">
-          <div aria-hidden="true">
-            <p class="m-top label">Weekly posts · Example Woodshop</p>
-            <div class="d-row"><span><b>Week 1</b>The finished box</span><span class="d-chip">Post</span></div>
-            <div class="d-row"><span><b>Week 2</b>Class day, with RealDays</span><span class="d-chip">Collab</span></div>
-            <div class="d-row"><span><b>Week 3</b>Behind the bench</span><span class="d-chip">Story</span></div>
-            <div class="d-row"><span><b>Week 4</b>A Saturday at the bench</span><span class="d-chip">Post</span></div>
-          </div>
-        </div>
-        <p>A post about you every week on Instagram and Facebook, tagged. Collab posts land on both our feeds, and in Victorian and Melbourne groups.</p>
-      </li>
-      <li>
-        <p class="label">Email</p>
-        <div class="mock plan-mock" role="img" aria-label="An email plan: who it goes to, when, and what is in it.">
-          <div aria-hidden="true">
-            <p class="m-top label">Email to past customers</p>
-            <p class="m-title">Want more? This one's close to you.</p>
-            <span class="m-row"><i>Who</i>Past RealDays customers near you</span>
-            <span class="m-row"><i>When</i>A quiet slot, or something new</span>
-            <span class="m-row"><i>What</i>One photo, one button</span>
-            <span class="m-row"><i>From</i>RealDays</span>
-          </div>
-        </div>
-        <p>Emails to people who have booked on RealDays before, when you have a quiet slot or something new. Nobody gets more than they would want.</p>
-      </li>
-      <li>
-        <p class="label">Paid ads</p>
-        <div class="mock ads" role="img" aria-label="A paid ad aimed at the area around Example Woodshop: a target area around the business, and a sponsored ad with a photo and a button.">
-          <div aria-hidden="true">
-            <p class="m-top label">Target area · around Example Woodshop</p>
-            <svg viewBox="0 0 240 70" class="ads__map" focusable="false"><circle cx="120" cy="35" r="30" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><circle cx="120" cy="35" r="5" fill="currentColor"/><path d="M10 60 L60 40 L90 50 L150 20 L230 30" fill="none" stroke="currentColor" stroke-opacity=".3"/></svg>
-            <div class="ads__ad">
-              <img class="m-photo" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="600" loading="lazy" decoding="async" />
-              <span class="ads__t"><span class="d-chip">Sponsored</span><b>Make a dovetailed keepsake box</b>Example Woodshop · A$480 per person</span>
-            </div>
-          </div>
-        </div>
-        <p>Small paid campaigns, aimed at the area around your business and the people most likely to book. The budget is agreed with you before anything runs.</p>
-      </li>
-    </ul>
+    <div>
+      <p class="eyebrow">Final note</p>
+      <h2 id="feedback-h">Any feedback? Let me know.</h2>
+      <p class="lede note__lede">As we’re a startup, any chats with our businesses are extremely valuable.<br />Also, Ro enjoys company.</p>
+      <p class="note__contact"><a href="https://wa.me/61466567953">WhatsApp: +61 466 567 953</a><br /><a href="mailto:rowena@getrealdays.com">rowena@getrealdays.com</a></p>
+    </div>
+    <div class="note__ro">
+      <p class="eyebrow">who IS RO?</p>
+      <div class="note__bio">
+        <img class="note__photo" src="assets/ro.jpg" alt="Ro Baulch" width="232" height="232" loading="lazy" decoding="async" />
+        <!-- CONFLICT B20: "almost 8 years" as a product designer/researcher. Ro to confirm the number to make public. -->
+        <p class="lede">Howdy. I’m the founder. And I’ve worked in tech as a product designer/researcher for almost 8 years. My favourite experiences include horsemanship workshops, motocross, or anything that involves adrenaline.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- 11. End card. One button only; no phone number until Ro supplies one. -->
+<!-- 11. End (Figma 4:3894) -->
 <section class="slide slide--end" id="end" aria-label="End">
   <div class="slide__in">
     <p class="wordmark">RealDays.</p>
-    <p class="pull end-line">Want to talk? Say yes, and we'll build your listing for you to approve.</p>
     <div class="actions">
-      <a class="btn" id="talkBtn" href="mailto:rowena@getrealdays.com">Yes, let's talk</a>
+      <a class="btn" id="talkBtn" href="mailto:rowena@getrealdays.com">let's talk</a>
     </div>
     <p class="label"><a href="https://getrealdays.com/">getrealdays.com</a></p>
   </div>

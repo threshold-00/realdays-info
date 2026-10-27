@@ -1,4 +1,4 @@
-// RealDays partner pitch: keys move between slides, a counter and progress bar
+// RealDays info deck: keys move between slides, a counter and progress bar
 // follow along, and ?for=Business%20Name fills in the business's name.
 (function () {
   var slides = [].slice.call(document.querySelectorAll('.slide'));
@@ -12,7 +12,7 @@
     [].forEach.call(document.querySelectorAll('[data-for]'), function (el) { el.textContent = 'Prepared for ' + name; el.hidden = false; });
     var talk = document.getElementById('talkBtn');
     if (talk) talk.href = 'mailto:rowena@getrealdays.com?subject=' + encodeURIComponent('RealDays: ' + name);
-    document.title = 'RealDays partner pitch for ' + name;
+    document.title = 'RealDays info deck for ' + name;
   }
 
   // The slide whose top is nearest the top of the screen.
@@ -24,7 +24,7 @@
     });
     return best;
   }
-  // updateUrl is false on load, so a link like …/#money isn't overwritten before the
+  // updateUrl is false on load, so a link like …/#pricing isn't overwritten before the
   // browser has jumped to it.
   function render(updateUrl) {
     current = nearest();
