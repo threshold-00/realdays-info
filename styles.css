@@ -39,7 +39,7 @@ a{color:inherit}
 /* Most Figma slides start 80px in at 1440, the cover, pricing, payments, final note and end at 48px. */
 @media (min-width:1200px),print{.slide--inset .slide__in{padding-left:var(--s-6)}}
 /* Full-bleed photo slide: the photo is darkened so white text stays readable. */
-.slide--photo{background:linear-gradient(rgba(23,23,26,.62),rgba(23,23,26,.62)),url('assets/customer-problem.jpg') center 40%/cover no-repeat var(--ink);color:var(--paper);border-top-color:transparent}
+.slide--photo{background:linear-gradient(rgba(23,23,26,.62),rgba(23,23,26,.62)),url('assets/customer-pottery.jpg') center 40%/cover no-repeat var(--ink);color:var(--paper);border-top-color:transparent}
 .slide--photo .eyebrow{color:var(--paper)}
 .slide--photo .eyebrow::before{background:var(--paper)}
 .label,.eyebrow{font-family:var(--mono);font-size:var(--t-label);font-weight:400;line-height:1.5;letter-spacing:var(--ls-label);text-transform:uppercase}
@@ -50,7 +50,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:0;margin:0;te
 #pricing h2,#payments h2,#feedback h2{font-size:var(--t-display);line-height:var(--lh-tight)}
 .lede{max-width:62ch;margin:0;font-size:var(--t-lede);line-height:1.6;color:var(--ink-2)}
 /* Big statement text (slides 1 to 3, contact lines). */
-.statement{max-width:1224px;font-size:var(--t-headline);font-weight:600;line-height:var(--lh-tight);letter-spacing:-.01em}
+.statement{max-width:1224px;font-size:var(--t-headline);font-weight:600;line-height:var(--lh-tight);letter-spacing:0}
 .statement p{margin:0 0 1.1em;text-wrap:balance}
 .statement p:last-child,.statement--tight p{margin:0}
 
