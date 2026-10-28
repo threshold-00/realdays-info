@@ -265,13 +265,10 @@ p>.tbc:first-child{margin-left:0}
 .costs__table{width:100%;border-collapse:collapse;font-size:var(--t-small);line-height:1.45}
 .costs__table caption{margin:0 0 var(--s-2);text-align:left;color:var(--ink)}
 .costs__table th,.costs__table td{padding:var(--s-2) var(--s-4) var(--s-2) 0;text-align:left;font-weight:400;vertical-align:top;border-bottom:var(--bw) solid var(--line)}
-.costs__table td{padding-right:0;text-align:right;white-space:nowrap}
+.costs__table td,.costs__table thead th:last-child{padding-right:0;text-align:right;white-space:nowrap}
 .costs__table thead th{padding-top:0;font-family:var(--mono);font-size:var(--t-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--ink-3);border-bottom-color:var(--line-ui)}
 .costs__table tbody tr:last-child th,.costs__table tbody tr:last-child td{font-weight:600}
 .costs .compare-note{margin-top:var(--s-2)}
-.costs__alt{max-width:720px;margin:var(--s-5) 0 0;color:var(--ink-3)}
-/* Side by side from 1024px so the slide still fits one screen. */
-@media (min-width:1024px),print{.pr-foot{display:grid;grid-template-columns:minmax(0,560px) minmax(0,440px);gap:var(--s-8);align-items:start}.pr-foot .costs__alt{margin-top:var(--s-6)}}
 
 /* ─── Payment guide: intro and image slot left, five blocks right ─── */
 .pg{display:grid;gap:var(--s-7);grid-template-areas:"intro" "blocks" "ph"}
@@ -291,16 +288,12 @@ p>.tbc:first-child{margin-left:0}
 .ask{display:grid;gap:var(--s-5) var(--s-7);max-width:1239px;margin:var(--s-7) 0 0;padding:0;list-style:none}
 @media (min-width:768px),print{.ask{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1200px),print{.ask{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.ask li{display:flex;align-items:flex-start;gap:var(--s-3);padding-top:var(--s-4);border-top:var(--bw) solid var(--line)}
-.ask .rm__n{font-family:var(--mono);font-size:var(--t-label)}
+.ask{counter-reset:ask}
+.ask li{display:flex;align-items:baseline;gap:var(--s-2);padding-top:var(--s-4);border-top:var(--bw) solid var(--line);counter-increment:ask}
+.ask li::before{content:counter(ask) ".";flex:none;min-width:1.25em;font-size:var(--t-title);font-weight:600;line-height:1.3;color:var(--ink)}
 .ask p{margin:0;font-size:var(--t-small);line-height:1.5;color:var(--ink-2)}
 .ask strong{display:block;margin:0 0 var(--s-1);font-size:var(--t-title);font-weight:600;line-height:1.3;color:var(--ink)}
 .ask__close{margin-top:var(--s-7);color:var(--ink)}
-
-/* Instagram line beside the contact details (final note and end card). */
-.ig-link{display:flex;align-items:center;margin:var(--s-4) 0 0;color:var(--ink-2)}
-.ig-link a{text-decoration:none;border-bottom:var(--bw) solid var(--line-ui)}
-.slide--end .ig-link{margin-top:var(--s-3)}
 
 /* ─── Final note: contact top, "Who is Ro?" pinned to the bottom ─── */
 .slide--note .slide__in{display:flex;flex-direction:column;justify-content:space-between;gap:var(--s-8);min-height:calc(100dvh - 2 * var(--s-8) - var(--bw))}
@@ -341,7 +334,6 @@ p>.tbc:first-child{margin-left:0}
   .costs{margin-top:var(--s-4)}
   .costs__table th,.costs__table td{padding-top:var(--s-1);padding-bottom:var(--s-1)}
   .compare-note{margin-top:var(--s-2)}
-  .costs__alt{margin-top:var(--s-4)}
   .ask{margin-top:var(--s-5)}
   .ask__close{margin-top:var(--s-5)}
   .compare th,.compare td{padding:var(--s-2) var(--s-3)}
@@ -365,7 +357,7 @@ p>.tbc:first-child{margin-left:0}
   .slide--note .slide__in{min-height:0}
   .note__bio{align-items:flex-start}
   /* 40px tap targets on phones. */
-  .toc a,.cover-contact a,.note__contact a,.slide--end .label a,.ig-link a{display:inline-flex;align-items:center;min-height:var(--control-h)}
+  .toc a,.cover-contact a,.note__contact a,.slide--end .label a{display:inline-flex;align-items:center;min-height:var(--control-h)}
 }
 
 /* Print to PDF: one landscape page per slide. Each slide is laid out as a 1604 x 901
