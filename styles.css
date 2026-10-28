@@ -89,13 +89,15 @@ p>.tbc:first-child{margin-left:0}
 .toc__list li{text-wrap:balance}
 .toc__list li+li{margin-top:var(--s-4)}
 
-/* ─── The business problem: four competitor screenshots ─── */
+/* ─── The problem: competitor screenshots, one smaller row under the copy ─── */
 .shots{display:grid;grid-template-columns:repeat(4,minmax(0,288px));gap:var(--s-6);margin:var(--s-9) 0 0;padding:0;list-style:none}
 .shots img,.shots .ph{display:block;width:100%;height:auto;aspect-ratio:288/255;object-fit:cover;object-position:top left;border:var(--bw) solid var(--line)}
+.shots--row{grid-template-columns:repeat(4,minmax(0,220px));gap:var(--s-4);margin-top:var(--s-7)}
+.shots__cap{max-width:62ch;margin:var(--s-3) 0 0;font-size:var(--t-small);line-height:1.45;color:var(--ink-3)}
 
 /* ─── Our approach ─── */
 .ap{display:grid;gap:var(--s-7);align-items:center}
-@media (min-width:1024px){.ap{grid-template-columns:minmax(0,578px) minmax(0,514px);justify-content:space-between;max-width:1239px}}
+@media (min-width:1024px),print{.ap{grid-template-columns:minmax(0,578px) minmax(0,514px);justify-content:space-between;max-width:1239px}}
 .ap__intro .lede{max-width:560px}
 .ap__list{display:grid;gap:var(--s-5);max-width:495px;margin:0;font-size:var(--t-lede);line-height:1.6}
 .ap__list>div{display:grid;gap:var(--s-1)}
@@ -192,6 +194,8 @@ p>.tbc:first-child{margin-left:0}
 .jr__frames li{flex:1 1 0;min-width:0;max-width:256px}
 .jr__frames .mock{height:var(--frame-h)}
 .jr__cap{margin:var(--s-4) calc(-1 * var(--s-2)) 0;text-align:center;text-wrap:balance}
+/* Step captions are sentence case (28 Oct 2026), still in the mono label face. */
+.jr__cap.label{text-transform:none;letter-spacing:.02em}
 /* Step number box, on its own line above the caption. */
 .jr__cap .jr__n{display:flex;margin:0 auto var(--s-1)}
 .jr__cap--narrow{max-width:190px;margin-left:auto;margin-right:auto}
@@ -229,7 +233,7 @@ p>.tbc:first-child{margin-left:0}
 
 /* ─── Roadmap: four columns under a numbered timeline ─── */
 .rm{display:grid;gap:var(--s-7);margin:var(--s-8) 0 0;padding:0;list-style:none}
-@media (min-width:1024px){
+@media (min-width:1024px),print{
   .rm{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(5,auto);gap:0 var(--s-7)}
   .rm>li{display:grid;grid-row:span 5;grid-template-rows:subgrid}
   /* The dotted line runs from the date to just short of the next column; the last one runs off the edge. */
@@ -256,20 +260,47 @@ p>.tbc:first-child{margin-left:0}
 .compare td:nth-child(2){font-weight:600}
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .compare-note{margin:var(--s-4) 0 0;font-size:var(--t-small);color:var(--ink-3)}
+/* What a listing costs today: a small strip under the comparison table. */
+.costs{max-width:560px;margin:var(--s-6) 0 0}
+.costs__table{width:100%;border-collapse:collapse;font-size:var(--t-small);line-height:1.45}
+.costs__table caption{margin:0 0 var(--s-2);text-align:left;color:var(--ink)}
+.costs__table th,.costs__table td{padding:var(--s-2) var(--s-4) var(--s-2) 0;text-align:left;font-weight:400;vertical-align:top;border-bottom:var(--bw) solid var(--line)}
+.costs__table td{padding-right:0;text-align:right;white-space:nowrap}
+.costs__table thead th{padding-top:0;font-family:var(--mono);font-size:var(--t-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--ink-3);border-bottom-color:var(--line-ui)}
+.costs__table tbody tr:last-child th,.costs__table tbody tr:last-child td{font-weight:600}
+.costs .compare-note{margin-top:var(--s-2)}
+.costs__alt{max-width:720px;margin:var(--s-5) 0 0;color:var(--ink-3)}
+/* Side by side from 1024px so the slide still fits one screen. */
+@media (min-width:1024px),print{.pr-foot{display:grid;grid-template-columns:minmax(0,560px) minmax(0,440px);gap:var(--s-8);align-items:start}.pr-foot .costs__alt{margin-top:var(--s-6)}}
 
 /* ─── Payment guide: intro and image slot left, five blocks right ─── */
 .pg{display:grid;gap:var(--s-7);grid-template-areas:"intro" "blocks" "ph"}
-@media (min-width:1024px){.pg{grid-template-columns:minmax(0,570px) minmax(0,679px);grid-template-rows:auto 1fr;grid-template-areas:"intro blocks" "ph blocks";justify-content:space-between;gap:var(--s-6) var(--s-8)}}
+@media (min-width:1024px),print{.pg{grid-template-columns:minmax(0,570px) minmax(0,679px);grid-template-rows:auto 1fr;grid-template-areas:"intro blocks" "ph blocks";justify-content:space-between;gap:var(--s-6) var(--s-8)}}
 .pg__intro{grid-area:intro}
 .pg__intro h2{margin-bottom:var(--s-3)}
 .pg__intro .lede{max-width:570px}
 .pg__ph{grid-area:ph;display:block;width:200px;height:auto}
 .pg__blocks{grid-area:blocks;align-self:start;display:grid;gap:var(--s-8) var(--s-5)}
-@media (min-width:768px){.pg__blocks{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (min-width:1024px){.pg__blocks{margin-top:var(--s-10);row-gap:var(--s-9)}}
+@media (min-width:768px),print{.pg__blocks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px),print{.pg__blocks{margin-top:var(--s-10);row-gap:var(--s-9)}}
 .pg h3{margin:0 0 var(--s-1);font-size:var(--t-title);line-height:1.3}
 .pg__blocks p{margin:0;font-size:var(--t-small);line-height:1.5;color:var(--ink-2)}
 .pg__blocks p+p{margin-top:1.5em}
+
+/* ─── What we ask of you: six numbered asks, three columns on desktop ─── */
+.ask{display:grid;gap:var(--s-5) var(--s-7);max-width:1239px;margin:var(--s-7) 0 0;padding:0;list-style:none}
+@media (min-width:768px),print{.ask{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1200px),print{.ask{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ask li{display:flex;align-items:flex-start;gap:var(--s-3);padding-top:var(--s-4);border-top:var(--bw) solid var(--line)}
+.ask .rm__n{font-family:var(--mono);font-size:var(--t-label)}
+.ask p{margin:0;font-size:var(--t-small);line-height:1.5;color:var(--ink-2)}
+.ask strong{display:block;margin:0 0 var(--s-1);font-size:var(--t-title);font-weight:600;line-height:1.3;color:var(--ink)}
+.ask__close{margin-top:var(--s-7);color:var(--ink)}
+
+/* Instagram line beside the contact details (final note and end card). */
+.ig-link{display:flex;align-items:center;margin:var(--s-4) 0 0;color:var(--ink-2)}
+.ig-link a{text-decoration:none;border-bottom:var(--bw) solid var(--line-ui)}
+.slide--end .ig-link{margin-top:var(--s-3)}
 
 /* ─── Final note: contact top, "Who is Ro?" pinned to the bottom ─── */
 .slide--note .slide__in{display:flex;flex-direction:column;justify-content:space-between;gap:var(--s-8);min-height:calc(100dvh - 2 * var(--s-8) - var(--bw))}
@@ -306,6 +337,13 @@ p>.tbc:first-child{margin-left:0}
   .rm{margin-top:var(--s-6)}
   .rm__date{margin-bottom:var(--s-6)}
   .shots{margin-top:var(--s-7)}
+  .shots--row{margin-top:var(--s-5)}
+  .costs{margin-top:var(--s-4)}
+  .costs__table th,.costs__table td{padding-top:var(--s-1);padding-bottom:var(--s-1)}
+  .compare-note{margin-top:var(--s-2)}
+  .costs__alt{margin-top:var(--s-4)}
+  .ask{margin-top:var(--s-5)}
+  .ask__close{margin-top:var(--s-5)}
   .compare th,.compare td{padding:var(--s-2) var(--s-3)}
   .pg__blocks{margin-top:var(--s-9);row-gap:var(--s-7)}
   .slide--note .slide__in{min-height:calc(100dvh - 2 * var(--s-6) - var(--bw))}
@@ -313,6 +351,10 @@ p>.tbc:first-child{margin-left:0}
 
 @media (max-width:1023px){
   .shots{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-4);margin-top:var(--s-7)}
+  .shots--row{grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-3)}
+}
+@media (max-width:639px){
+  .shots--row{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:767px){
   .slide{padding:var(--s-7) var(--gutter)}
@@ -323,7 +365,7 @@ p>.tbc:first-child{margin-left:0}
   .slide--note .slide__in{min-height:0}
   .note__bio{align-items:flex-start}
   /* 40px tap targets on phones. */
-  .toc a,.cover-contact a,.note__contact a,.slide--end .label a{display:inline-flex;align-items:center;min-height:var(--control-h)}
+  .toc a,.cover-contact a,.note__contact a,.slide--end .label a,.ig-link a{display:inline-flex;align-items:center;min-height:var(--control-h)}
 }
 
 /* Print to PDF: one landscape page per slide. Each slide is laid out as a 1604 x 901
