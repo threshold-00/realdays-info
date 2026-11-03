@@ -87,7 +87,7 @@
       </div>
       <div class="ap__side">
         <dl class="ap__list">
-          <div><dt>Half the commission.</dt><dd>12% including card fees from May 2027, against 20 to 30% elsewhere. We plan to stay there.</dd></div>
+          <div><dt>Half the commission.</dt><dd>12% including card fees, against 20 to 30% elsewhere. We plan to stay there.</dd></div>
           <div><dt>Customers sent to you.</dt><dd>Search, AI search, social and targeted ads aimed at people near you, and a monthly note on what we sent.</dd></div>
           <div><dt>Your story, not a listing.</dt><dd>A page written with you, in your words, with your photos, and reviews from people who’ve just done it.</dd></div>
           <div><dt>Built around how you work.</dt><dd>We ask what gets in the way, build for it, and move things by hand until it’s built.</dd></div>
@@ -159,16 +159,16 @@
           <p class="jr__cap jr__cap--narrow label"><span class="jr__n">3</span>They arrive and do the experience</p>
         </li>
         <li>
-          <!-- The business end (Figma note 6:4242): A$480 less Stripe's card fee for Australian cards (1.7% plus 30c), sent the day after the last session. -->
-          <div class="mock payout" role="img" aria-label="The business's Stripe payout: A$471.54 for booking RD-L84ELZ, sent Monday 16 November, arriving in the bank in 1 to 2 business days.">
+          <!-- The business end (Figma note 6:4242): A$480 less the 12% RealDays fee (GST and card fee included), sent the day after the last session. -->
+          <div class="mock payout" role="img" aria-label="The business's Stripe payout: A$422.40 for booking RD-L84ELZ, sent Monday 16 November, arriving in the bank in 1 to 2 business days.">
             <div aria-hidden="true">
               <p class="m-top label">Example Woodshop · Payouts</p>
-              <p class="payout__amt">A$471.54</p>
+              <p class="payout__amt">A$422.40</p>
               <p class="m-sub label">Sent Mon 16 Nov, 6am</p>
               <dl class="payout__rows">
                 <div><dt>Booking RD-L84ELZ</dt><dd>A$480.00</dd></div>
-                <div><dt>Card fee</dt><dd>−A$8.46</dd></div>
-                <div class="payout__total"><dt>Paid to you</dt><dd>A$471.54</dd></div>
+                <div><dt>RealDays fee (12%)</dt><dd>−A$57.60</dd></div>
+                <div class="payout__total"><dt>Paid to you</dt><dd>A$422.40</dd></div>
               </dl>
               <p class="payout__bank">To your bank ···· 4821<br />Sent the day after the experience, in your bank 1 to 2 business days later</p>
               <p class="payout__by label">Powered by <img src="assets/stripe-wordmark.svg" alt="" width="48" height="20" /></p>
@@ -186,10 +186,10 @@
 <section class="slide" id="pricing" aria-labelledby="pricing-h">
   <div class="slide__in">
     <p class="eyebrow">What it costs</p>
-    <!-- CONFLICT B10: "only the bookings we bring you" suggests a business's own customers are free. Suggested: "Free until May 2027. Then 12% on bookings made through RealDays." -->
-    <h2 id="pricing-h">Free until May 2027. Then 12% on only the bookings we bring you.</h2>
-    <!-- CONFLICT B12: no mention of notice or leaving. Suggested: add "You’ll get written notice by 2 March 2027, and you can leave any time." -->
-    <p class="lede">Until 1 May 2027, you pay only the card fee on each booking, about 1.7% plus 30 cents for Australian cards, the same as taking a card at the counter. From 1 May 2027, it's 12% of each booking made through RealDays, with GST and the card fee included. If a booking is refunded in full, so is our fee.</p>
+    <!-- CONFLICT B10: "only the bookings we bring you" suggests a business's own customers are free. Suggested: "12% on bookings made through RealDays." -->
+    <h2 id="pricing-h">12% on only the bookings we bring you.</h2>
+    <!-- CONFLICT B12: no mention of notice or leaving. Suggested: add "You’ll get at least 60 days’ notice of any change, and you can leave any time." -->
+    <p class="lede">It's 12% of each booking made through RealDays, with GST and the card fee included. If a booking is refunded in full, so is our fee.</p>
     <div class="table-wrap">
       <table class="compare">
         <caption class="sr-only">RealDays compared with Airbnb Experiences, GetYourGuide and Viator</caption>
@@ -363,14 +363,13 @@
   <div class="slide__in">
     <p class="eyebrow">What we ask of you</p>
     <h2 id="ask-h">Ten minutes a week. That’s it.</h2>
-    <p class="lede">RealDays only works if customers can trust a yes. In return for the bookings, we ask six things:</p>
+    <p class="lede">RealDays only works if customers can trust a yes. In return for the bookings, we ask five things:</p>
     <ol class="ask">
       <li><p><strong>Answer every request within 24 hours.</strong> A quick no is better than a slow yes.</p></li>
       <li><p><strong>Tell us what you want to promote.</strong> An offer, a new experience, a season you’d like filled. That’s what we push.</p></li>
       <li><p><strong>Tell us how you take bookings today.</strong> Your system, your calendar, your rules, so we fit around it rather than over it.</p></li>
       <li><p><strong>Tell us the moment anything changes.</strong> A cancelled day, a moved date, a new price. One message is enough.</p></li>
       <li><p><strong>Send us your waiver and insurance once.</strong> We attach the waiver to every confirmation. We never ask again unless something changes.</p></li>
-      <li><p><strong>Treat RealDays customers as your own.</strong> They are. You have their details, and they’ll come back to you directly.</p></li>
     </ol>
     <p class="lede ask__close">Everything else, the listing, the photos, the marketing, the money, is ours to do.</p>
   </div>
