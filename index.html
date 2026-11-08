@@ -160,7 +160,7 @@
         </li>
         <li>
           <!-- The business end (Figma note 6:4242): A$480 less the 12% RealDays fee (GST and card fee included), sent the day after the last session. -->
-          <div class="mock payout" role="img" aria-label="The business's Stripe payout: A$422.40 for booking RD-L84ELZ, sent Monday 16 November, arriving in the bank in 1 to 2 business days.">
+          <div class="mock payout" role="img" aria-label="The business's Stripe payout: A$422.40 for booking RD-L84ELZ, sent Monday 16 November, usually reaching the bank within a few business days.">
             <div aria-hidden="true">
               <p class="m-top label">Example Woodshop · Payouts</p>
               <p class="payout__amt">A$422.40</p>
@@ -170,7 +170,7 @@
                 <div><dt>RealDays fee (12%)</dt><dd>−A$57.60</dd></div>
                 <div class="payout__total"><dt>Paid to you</dt><dd>A$422.40</dd></div>
               </dl>
-              <p class="payout__bank">To your bank ···· 4821<br />Sent the day after the experience, in your bank 1 to 2 business days later</p>
+              <p class="payout__bank">To your bank ···· 4821<br />Sent the day after the experience, usually in your bank within a few business days</p>
               <p class="payout__by label">Powered by <img src="assets/stripe-wordmark.svg" alt="" width="48" height="20" /></p>
             </div>
           </div>
@@ -201,7 +201,7 @@
           <!-- CONFLICT B11: the 12% includes GST as well as card fees. Suggested: "12% incl. GST and card fees". -->
           <tr><th scope="row">Commission</th><td>12% incl. card fees</td><td>20%</td><td>25%</td><td>25%</td></tr>
           <tr><th scope="row">You get the customer's email</th><td>Yes</td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td><td><span class="tbc-text">No</span></td></tr>
-          <tr><th scope="row">Paid</th><td>Day after the experience, in your bank 1 to 2 business days later</td><td><span class="tbc-text">After the experience</span></td><td><span class="tbc-text">Twice monthly</span></td><td><span class="tbc-text">30 days after</span></td></tr>
+          <tr><th scope="row">Paid</th><td>Day after the experience, usually in your bank within a few business days</td><td><span class="tbc-text">After the experience</span></td><td><span class="tbc-text">Twice monthly</span></td><td><span class="tbc-text">30 days after</span></td></tr>
           <tr><th scope="row">Exclusivity</th><td>None</td><td><span class="tbc-text">None</span></td><td><span class="tbc-text">None</span></td><td><span class="tbc-text">None</span></td></tr>
         </tbody>
       </table>
@@ -272,14 +272,14 @@
               <p class="m-cap">Example Woodshop Dovetails cut by hand, two days at the bench. Book the keepsake box class on RealDays.</p>
             </div>
           </div>
-          <div class="mock email" role="img" aria-label="Email from RealDays to a past customer, subject: Want more? This one's close to you, with one photo and a See the experience button.">
+          <div class="mock email" role="img" aria-label="Email from RealDays to a customer who asked to hear about new experiences, subject: Want more? This one's close to you, with one photo and a See the experience button.">
             <div aria-hidden="true">
               <div class="em__hd">
                 <p><i class="label">From</i>RealDays</p>
                 <p><i class="label">To</i>Sam Taylor</p>
                 <p><i class="label">Subject</i><b>Want more? This one's close to you.</b></p>
               </div>
-              <p class="m-body">Hi Sam, you booked with us before. Here's another small business near you.</p>
+              <p class="m-body">Hi Sam, you asked to hear about new experiences. Here's a small business near you.</p>
               <img class="m-photo em__photo" src="assets/woodshop-keepsake-box.jpg" alt="" width="900" height="603" loading="lazy" decoding="async" />
               <p class="m-title">Make a dovetailed keepsake box</p>
               <span class="m-btn">See the experience</span>
@@ -338,7 +338,7 @@
         <p class="eyebrow">Your PAYMENTS</p>
         <h2 id="payments-h">Payment guide</h2>
         <!-- CONFLICT B13: incomplete. Suggested addition: "A course over a few days pays the day after its last day, and a multi-week course the day after its first class. It usually reaches your bank 1 to 2 business days later. Customers can book up to 80 days ahead." -->
-        <p class="lede">Payments run on Stripe, the same system behind Airbnb, Uber and Shopify, so your details and your customers’ details are kept secure. RealDays never sees card or account numbers. You open a Stripe account through RealDays in about ten minutes with your ABN and bank details. From then on, every accepted booking is held safely, sent to you the day after the experience, and in your bank one to two business days later.</p>
+        <p class="lede">Payments run on Stripe, the same system behind Uber and Shopify, so your details and your customers’ details are kept secure. RealDays never sees card or account numbers. You open a Stripe account through RealDays in about ten minutes with your ABN, bank details and ID. From then on, every accepted booking is held safely, sent to you the day after the experience, and usually in your bank within a few business days.</p>
       </div>
       <!-- Stripe's payment screen, screenshot Ro supplied 27 Oct 2026 (292 x 469), shown small so it stays sharp. -->
       <img class="pg__ph" src="assets/payment-checkout.png" alt="Stripe's payment screen: Apple Pay, Link, a saved card and other ways to pay, then a Pay button." width="292" height="469" loading="lazy" decoding="async" />
@@ -348,11 +348,10 @@
         <div><h3>Rescheduling.</h3><p>If a customer asks to move and you agree, the booking and everything they’ve paid moves to the new session, and your payout follows the new date. While this is being built into the site, get in touch and we’ll move it for you.</p></div>
         <!-- CONFLICT B14: RealDays doesn't set a 48-hour rule. Suggested: "Your own cancellation policy applies, as the customer saw it when they booked. They see the refund amount before they confirm." (and delete the multi-day sentence) -->
         <!-- CONFLICT B15: if the business cancels, the customer gets a full refund or an agreed new time. Suggested: "If you cancel, including for weather or illness, the customer gets a full refund or a new time you both agree on." -->
-        <div><h3>Cancellations.</h3><p>Customers can cancel free up to 48 hours before. Inside 48 hours, they can reschedule or forfeit. If you or the weather cause a cancel, the customer gets a full refund.</p><p>You can set a longer window for multi-day experiences.</p></div>
+        <div><h3>Cancellations.</h3><p>Your own cancellation policy applies when a customer cancels. They cancel from a link in their booking email, see what they’ll get back before they confirm, and the refund happens automatically. If you or the weather cause a cancel, the customer gets a full refund.</p></div>
         <!-- CONFLICT B16: no one-business-day promise, and a refund after a payout can come back out of what the business was paid. Suggested: "If a booking is refunded, the amount is taken from your payout. If your payout was already sent, it is taken back from your Stripe account or your next payouts. RealDays never adds a fee of its own to a refund." -->
-        <div><h3>Refunds.</h3><p>RealDays issues every refund within one business day, under the policy above. Because the money is held until after the experience, a refund never has to come back out of your bank.</p></div>
-        <!-- CONFLICT B17: the business carries a lost dispute. Suggested: "If a customer’s bank ever queries a charge, RealDays handles the paperwork with Stripe and emails you when it opens and closes. If the bank sides with the customer, the disputed amount and Stripe’s dispute fee (currently A$25) come off your payouts." -->
-        <div><h3>Disputes.</h3><p>If a customer's bank ever queries a charge, RealDays pays the dispute fee and handles the paperwork. Because every booking is one you accepted, "I didn't authorise this" disputes almost never happen.</p></div>
+        <div><h3>Refunds.</h3><p>RealDays issues every refund within 5 business days, under your policy. Because the money is held until after the experience, a refund never has to come back out of your bank.</p></div>
+        <div><h3>Disputes.</h3><p>If a customer's bank ever queries a charge, RealDays pays the dispute fee and handles the paperwork. If the bank sides with the customer, the disputed amount isn't paid to you. Because every booking is one you accepted, "I didn't authorise this" disputes almost never happen.</p></div>
       </div>
     </div>
   </div>
